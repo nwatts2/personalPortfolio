@@ -1,0 +1,23 @@
+{
+  "main.css": "/static/css/main.d7e6522e.chunk.css",
+  "main.js": "/static/js/main.601d86e6.chunk.js",
+  "main.js.map": "/static/js/main.601d86e6.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.ba756346.chunk.js": "/static/js/2.ba756346.chunk.js",
+  "static/js/2.ba756346.chunk.js.map": "/static/js/2.ba756346.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.5ae1b73c2fc1a24f289ba13d16ee25a5.js": "/precache-manifest.5ae1b73c2fc1a24f289ba13d16ee25a5.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.d7e6522e.chunk.css.map": "/static/css/main.d7e6522e.chunk.css.map",
+  "static/media/2018 Gubernatorial Results.png": "/static/media/2018 Gubernatorial Results.7360c45e.png",
+  "static/media/index.css": "/static/media/TurpisItalic-JR0j7.e97a8737.ttf",
+  "static/media/Alaska House Breakdown.png": "/static/media/Alaska House Breakdown.9a227ea2.png",
+  "static/media/Game.png": "/static/media/Game.c7896e23.png",
+  "static/media/Gubernatorial Results.png": "/static/media/Gubernatorial Results.82cb8475.png",
+  "static/media/House Results.png": "/static/media/House Results.5303e1a5.png",
+  "static/media/Main Page.png": "/static/media/Main Page.4098b8de.png",
+  "static/media/Scoreboard.png": "/static/media/Scoreboard.504011e6.png",
+  "static/media/Senate Call Sim.png": "/static/media/Senate Call Sim.290a58f6.png",
+  "static/media/Start Game.png": "/static/media/Start Game.a5a4223d.png"
+}

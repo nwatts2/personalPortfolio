@@ -1,0 +1,101 @@
+.projectPanel {
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.projectPanelDisplayContainer {
+    border: 3px solid #d9d9d9;
+    outline: 5px solid #30475D;
+    border-radius: 20px;
+    width: 80%;
+    height: 95%;
+    padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, #30475D99, transparent);
+    box-shadow: -5px 5px 3px 0px #141719;
+}
+
+.projectPanelDisplayContainer svg {
+    width: 100%;
+    fill: #F15455;
+    transition: all .2s ease-in-out;
+}
+
+.projectPanelDisplayContainer .prevPanelButton:active svg, .projectPanelDisplayContainer .nextPanelButton:active svg {
+    fill: #d9d9d9;
+}
+
+.projectPanelDisplayContainer .prevPanelButton, .projectPanelDisplayContainer .nextPanelButton {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    top:0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+
+.projectPanelDisplayContainer .prevPanelButton {
+    left:0;
+    background: linear-gradient(to right, #151820FF, #15182000);
+    justify-content: flex-start;
+}
+
+.projectPanelDisplayContainer .nextPanelButton {
+    left:95%;
+    background: linear-gradient(to left, #151820FF, #15182000);
+    justify-content: flex-end;
+}
+
+.projectPanelDisplayContainer .prevPanelButton:hover, .projectPanelDisplayContainer .nextPanelButton:hover { opacity: 1; transition: all .2s ease-in-out }
+
+.projectPanelDisplay {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.projectPanelSelector {
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.projectPanelSelector hr {
+    border: 3px solid white;
+    border-radius: 999px;
+    width: 45%;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    opacity: .3;
+}
+
+.projectPanelSelector .selected {
+    opacity: 1;
+}
+
+.panel {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+
+.activePanel { opacity: 1; width: 100%;}
+.inactivePanel { opacity: 0; width: 100%;}

@@ -1,13 +1,233 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Party Confetti";
+  src: url('../fonts/party-confetti-font/PartyConfettiRegular.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "3D Isometric";
+  src: url('../fonts/3d-isometric-font/3DIsometric-YzLLy.ttf') format('truetype');
+  /*src: url('../fonts/3d-isometric-font/3DIsometricBlack-BWPPG.ttf') format('truetype');
+  src: url('../fonts/3d-isometric-font/3DIsometricBold-8MYYZ.ttf') format('truetype');*/
+}
+
+@font-face {
+  font-family: "Amne Sans";
+  src: url('../fonts/a-amne-sans-font/AmneSans-BWXVd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Anti Corona";
+  src: url('../fonts/a-anti-corona-font/AAntiCorona-L3Ax3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Ceceps Handwriting";
+  src: url('../fonts/cecep-s-handwriting-2-font/CecepsHandwriting-vmpKZ.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Hey August";
+  src: url('../fonts/hey-august-font/HeyAugust-VGOqe.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "New Years Party";
+  src: url('../fonts/new-years-party-font/NewYearsParty-VGPZ0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Turpis";
+  src: url('../fonts/turpis-font/Turpis-GOgVm.ttf') format('truetype');
+  src: url('../fonts/turpis-font/TurpisItalic-JR0j7.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #232831;
+  color: white;
+  font-family: "Courier";
+  overflow-x: hidden;
+}
+
+.row {
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.navBarBackground {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #F15455;
+  background: linear-gradient(to bottom, #232831FF 50%, #23283100 90%);
+  padding: 10px 0px 0px 0px;
+}
+
+.navBarName {
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.navBarName img {
+  height: 35px;
+}
+
+.navBarLogo {
+  width: 17%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navBarLogo h1 {
+  font-size: 2.1rem;
+  font-family: "3D Isometric";
+  width: auto;
+  margin: 4px 0px 0px 0px;
+  padding: 5px 30px;
+  outline: 2px solid white;
+  outline-offset: -5px;
+  border-radius: 20px 10px 20px 10px;
+  background-color: #232831;
+}
+
+.navBarLogo h2 {
+  font-size: 1.2rem;
+  font-family: "Amne Sans";
+  width: auto;
+  margin: 10px 0px 0px 0px;
+  padding: 5px 10px 0px 10px;
+  background-color: #232831;
+  border-radius: 20px 10px 20px 10px;
+
+}
+
+.navBarName .social {
+  width: 71%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 29%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navBarName .social a {
+  height: 60%;
+  margin: 0px 6px;
+  transition: all .2s ease-in-out;
+}
+
+.navBarName .social svg {
+  height: 100%;
+  fill: #d9d9d9;
+}
+
+.navBarName .social .githubLogo { fill: #d9d9d9; transition: all .2s ease-in-out }
+.navBarName .social .indeedLogoBG { fill: transparent; transition: all .2s ease-in-out }
+.navBarName .social .indeedLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
+.navBarName .social .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
+.navBarName .social .electionLogoRed { fill: #d9d9d9; transition: all .2s ease-in-out }
+.navBarName .social .electionLogoBlue { fill: #a9a9a9; transition: all .2s ease-in-out }
+
+.navBarName .social svg:hover .githubLogo { fill: white; transition: all .2s ease-in-out }
+.navBarName .social svg:hover .indeedLogoBG { fill: #069; transition: all .2s ease-in-out }
+.navBarName .social svg:hover .indeedLogoLetters { fill: white; transition: all .2s ease-in-out }
+.navBarName .social svg:hover .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
+.navBarName .social svg:hover .electionLogoRed { fill: #fa1a54; transition: all .2s ease-in-out }
+.navBarName .social svg:hover .electionLogoBlue { fill: #3146ff; transition: all .2s ease-in-out }
+
+.navBar {
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  border-radius: 20px 20px 0px 0%;
+  position: relative;
+  z-index: 3;
+}
+
+.navBar h2 {
+  margin: 0;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  z-index: 3;
+  font-family: "Turpis";
+}
+
+.navSVG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+}
+
+.navSVG svg path {
+  transition: all .2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  width: auto;
+}
+
+.sectionTitleContainer {
+  width: 90%;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectionTitle {
+  width: 25%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F15455;
+  border-radius: 10px;
+  box-shadow: -5px 5px 3px 0px #141719;
+  margin: 0;
+}
+
+.sectionTitle h1 {
+  font-family: "3D Isometric";
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #232831;
+}
+
+.sectionTitle hr {
+  width: 100%;
+  margin: 0px;
+  border: 3px solid white;
 }

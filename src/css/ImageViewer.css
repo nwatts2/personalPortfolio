@@ -1,0 +1,129 @@
+.imageViewer {
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.imageViewerDisplayContainer {
+    width: 90%;
+    height: 95%;
+    padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageViewerDisplayContainer svg {
+    width: 100%;
+    fill: #F15455;
+    transition: all .1s ease-in-out;
+}
+
+.imageViewerDisplayContainer .prevImageButton:active svg, .imageViewerDisplayContainer .nextImageButton:active svg, .imageViewerDisplayContainer .prevImageButton:hover svg, .imageViewerDisplayContainer .prevImageButton:hover svg {
+    fill: #d9d9d9;
+}
+
+.imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton {
+    position: absolute;
+    width: 10%;
+    top:40%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+
+.imageViewerDisplayContainer .prevImageButton {
+    left:0;
+    justify-content: flex-start;
+}
+
+.imageViewerDisplayContainer .nextImageButton {
+    left:90%;
+    justify-content: flex-end;
+}
+
+.imageViewerDisplay {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.imageViewerDisplay img {
+    height: 100%;
+    max-width: 90%;
+    border-radius: 20px;
+    outline: 3px solid #f15455;
+    border: 3px solid #d9d9d9;
+    box-shadow: -5px 5px 3px 0px #141719;
+}
+
+.imageSelector {
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px 0px 0px 0px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 10px 20px;
+    background: linear-gradient(to right, transparent, #232831 30%, #232831 70%, transparent);
+}
+
+.imageSelector hr {
+    border: 3px solid white;
+    border-radius: 999px;
+    width: 45%;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    opacity: .3;
+}
+
+.imageSelector .imageContainer {
+    overflow: hidden;
+    height: 100px;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #232831;
+    border: 2px solid #30475D;
+    box-shadow: -5px 5px 3px 0px #141719;
+    transition: all .2s ease-in-out;
+}
+
+.imageSelector .imageContainer:hover {
+    opacity: 0.9;
+}
+
+.imageSelector .imageContainer img {
+    height: 100%;
+}
+
+.imageSelector .selected {
+    opacity: 1;
+}
+
+.imageSelector .unselected {
+    opacity: .5;
+}
+
+.image {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+
+.activeImage { opacity: 1; width: 100%;}
+.inactiveImage { opacity: 0; width: 100%;}

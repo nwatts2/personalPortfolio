@@ -13,9 +13,10 @@ const CoverLetterGenerator = () => {
                 <ProjectDescription title="Cover Letter Generator App" text={letterText} link={"Cover-Letter-Generator"} />
             </div>
             <div className='row coverLetterGeneratorRight'>
-                <video autoPlay loop muted>
+            <iframe src="https://www.youtube.com/embed/2f9ai4mtRYI?mute=1&autoplay=1&controls=0&fs=0" title="Cover Letter Generator App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                {/*<video autoPlay loop muted>
                     <source src={CoverLetterExplainer} type="video/mp4" />
-                </video>
+    </video>*/}
             </div>
         </div>
     )

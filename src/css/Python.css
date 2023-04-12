@@ -1,9 +1,14 @@
 .pythonContainer {
     width: 100%;
-    height: 95vh;
+    height: 140vh;
+    max-height: 1300px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #232831 50%, #30475D);
+    position: relative;
+}
+
+.pythonContainer svg {
+    filter: drop-shadow(-5px 5px 3px #141719)
 }
 
 .python {
@@ -11,28 +16,11 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    z-index: 1;
+    position: relative;
 }
 
-.pythonLeft {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items:flex-start;
-    padding: 0px 0px 0px 60px;
-    width: 50%;
-    height: 100%;
-}
-
-.pythonRight {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items:center;
-    width: 50%;
-    height: 100%;
-}
-
-.pythonLeft h1 {
+.python h1 {
     margin: 20px 0px 0px 0px;
     padding: 0;
     width: 80%;
@@ -41,45 +29,98 @@
     line-height: 2.3rem;
 }
 
-.pythonLeft .purposeEmphasis {
-    background-color: #30475D;
-    border-radius: 10px 20px 10px 20px;
-    margin: 0;
-    padding: 0;
-    width: fit-content;
-    line-height: 1px;
-    font-style: italic;
-    text-shadow: 0px 0px 5px black;
-
-}
-
-.greetingContainer {
-    background-color: #F1545555;
-    border-radius: 10px;
-    margin: 0;
-    padding: 10px 30px;
+.python video {
     box-shadow: -5px 5px 3px 0px #141719;
+    height: 100%;
 }
 
-.greetingContainer p {
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0;
-    font-family: "Courier"
+.python .ticTacToeText {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    width: 40%;
 }
 
-.purposeStatement {
-    margin: 40px 0px 0px 0px;
-    padding: 20px 30px;
-    border: 5px solid #30475D;
-    border-radius: 15px;
-    width: 80%;
-    box-shadow: -5px 5px 5px #141719;
-    background: linear-gradient(to bottom left, #30475D99, transparent);
+.python .sudokuText {
+    position: absolute;
+    bottom: 150px;
+    right: 10%;
+    width: 40%;
 }
 
-.purposeStatement p {
-    font-family: "Courier";
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+.python .ticTacToeVideo { 
+    position: absolute;
+    top: 20px; 
+    right: 10%; 
+    height: 55%;
+}
+
+.python .sudokuVideo { 
+    position: absolute; 
+    bottom: 100px; 
+    left: 7%; 
+    height: 55%;
+}
+
+.pythonContainer .paintBackground {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.pythonContainer .paintBackground svg {
+    position: absolute;
+    filter: none;
+    overflow: hidden;
+}
+
+.pythonContainer .paintOne { 
+    fill: #141719;
+    z-index: 2;
+    width: 85%;
+    transform: translate(-10%, -5%) rotate(90deg) scaleX(0.67);
+}
+
+.pythonContainer .paintTwo { 
+    fill: #30475D; 
+    z-index: 0;
+    width: 65%;
+    transform: translate(22%, 0%) rotate(-90deg) scaleX(0.67);
+}
+
+.pythonContainer .paintThree { 
+    fill: #d9d9d9;
+    z-index: 1;
+    width: 65%;
+    transform: translate(-15%, -2%) rotate(20deg) scaleX(0.67);
+}
+
+.pythonContainer .arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.pythonContainer .arrow1 {
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    width: 15%;
+    z-index: 100;
+    transform: rotate(165deg);
+    filter: drop-shadow(5px -5px 3px #141719);
+    fill: #d9d9d9;
+}
+
+.pythonContainer .arrow2 {
+    position: absolute;
+    top: 53%;
+    right: 48%;
+    width: 15%;
+    z-index: 100;
+    transform: scaleX(-1) rotate(15deg);
+    filter: drop-shadow(5px 5px 3px #141719);
+    fill: #d9d9d9;
 }

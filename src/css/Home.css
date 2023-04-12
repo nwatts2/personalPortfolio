@@ -3,10 +3,10 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #232831 50%, #30475D);
     margin: 60px 0px 0px 0px;
     width: 100%;
     height: 95vh;
+    max-height: 1000px;
 }
 
 .homeLeft {
@@ -31,7 +31,7 @@
 .homeLeft h1 {
     margin: 20px 0px 0px 0px;
     padding: 0;
-    width: 80%;
+    width: 100%;
     font-family: "Courier New";
     font-size: 2rem;
     line-height: 2.3rem;
@@ -78,4 +78,47 @@
     font-family: "Courier";
     font-size: 1.2rem;
     line-height: 1.5rem;
+}
+
+.deskImageContainer {
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.deskImageContainer .paintBackground {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.deskImageContainer .paintBackground svg {
+    position: absolute;
+}
+
+.deskImageContainer .paintOne { 
+    fill: #d9d9d9;
+    z-index: 1;
+    width: 100%;
+    transform: translate(15%, -30%)
+}
+
+.deskImageContainer .paintTwo { 
+    fill: #141719; 
+    z-index: 0;
+    transform: translate(0%, -10%)
+}
+
+.deskImageContainer .paintThree { 
+    fill: #30475D; 
+    z-index: 2;
+    transform: translate(-5%, -5%)
+}
+
+.deskImageContainer img {
+    position: absolute;
+    width: 100%;
 }

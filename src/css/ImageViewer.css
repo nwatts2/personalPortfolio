@@ -8,18 +8,27 @@
     z-index: 0;
 }
 
+.imageViewer svg {
+    filter: drop-shadow(-5px 5px 3px #141719);
+}
+
 .imageViewerDisplayContainer {
     width: 90%;
     height: 95%;
     padding: 20px 40px;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .imageViewerDisplayContainer svg {
     width: 100%;
-    fill: #F15455;
+    fill: #232831;
     transition: all .1s ease-in-out;
+}
+
+.imageViewerDisplayContainer .prevImageButton svg {
+    fill: #F15455;
 }
 
 .imageViewerDisplayContainer .prevImageButton:active svg, .imageViewerDisplayContainer .nextImageButton:active svg, .imageViewerDisplayContainer .prevImageButton:hover svg, .imageViewerDisplayContainer .prevImageButton:hover svg {
@@ -57,12 +66,12 @@
 }
 
 .imageViewerDisplay img {
-    height: 100%;
-    max-width: 90%;
     border-radius: 20px;
     outline: 3px solid #f15455;
     border: 3px solid #d9d9d9;
     box-shadow: -5px 5px 3px 0px #141719;
+    max-width: 90%;
+    height: 100%;
 }
 
 .imageSelector {
@@ -74,7 +83,8 @@
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     padding: 10px 20px;
-    background: linear-gradient(to right, transparent, #232831 30%, #232831 70%, transparent);
+    background: linear-gradient(to right, transparent, #232831B0 30%, #232831B0 70%, transparent);
+    z-index: 1;
 }
 
 .imageSelector hr {

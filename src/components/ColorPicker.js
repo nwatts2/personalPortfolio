@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
+import ColorPickerExplainer from '../videos/Color Picker.mov';
 import '../css/ColorPicker.css';
 
 const ColorPicker = () => {
@@ -8,7 +9,11 @@ const ColorPicker = () => {
     return (
         <div className='row colorPicker'>
             <div className='row colorPickerLeft'>
-                <iframe src="https://www.youtube.com/embed/h_u0X6abz8E" title="Color Picker App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                {//<iframe src="https://www.youtube.com/embed/h_u0X6abz8E" title="Color Picker App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+}
+                <video autoPlay loop muted >
+                    <source src={ColorPickerExplainer} type="video/mp4" />
+                </video>
             </div>
             <div className='column colorPickerRight'>
                 <h2>MacOS Projects</h2>

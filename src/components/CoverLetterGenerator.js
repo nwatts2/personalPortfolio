@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
+import CoverLetterExplainer from '../videos/Cover Letter Generator.mov';
 import '../css/CoverLetterGenerator.css';
 
 const CoverLetterGenerator = () => {
@@ -12,8 +13,10 @@ const CoverLetterGenerator = () => {
                 <ProjectDescription title="Cover Letter Generator App" text={letterText} link={"Cover-Letter-Generator"} />
             </div>
             <div className='row coverLetterGeneratorRight'>
-                <iframe src="https://www.youtube.com/embed/2f9ai4mtRYI" title="Cover Letter Generator App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
-            
+                <video autoPlay loop muted>
+                    <source src={CoverLetterExplainer} type="video/mp4" />
+                </video>
+            </div>
         </div>
     )
 }

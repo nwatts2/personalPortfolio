@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import "../css/Home.css"
+import React, { useEffect, useState } from 'react';
+import Desk from '../images/Desk.png';
+import PaintBackground from '../components/PaintBackground';
+import "../css/Home.css";
 
 const Home = () => {
     return (
-        <div className="home" id="home">
+        <div className="row home pageSection" id="home">
             <div className="homeLeft">
                 <div className="greetingContainer">
                     <p className="tab" id="HOME">Welcome! I'm Noah</p>
@@ -14,7 +16,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="homeRight">
-                <p>Image</p>
+                <div className="row deskImageContainer">
+                    <PaintBackground />
+                    <img src={Desk} />
+                </div>
             </div>
         </div>        
     );

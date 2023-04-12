@@ -1,5 +1,7 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
+import ToDoExplainer from '../videos/ToDo.mov';
+import CalculatorExplainer from '../videos/Calculator.mov';
 import '../css/IOS.css';
 
 const IOS = () => {
@@ -14,8 +16,16 @@ const IOS = () => {
                 <ProjectDescription title="Calculator App" text={calculatorText} link={"Calculator"} />
             </div>
             <div className='row iosRight'>
-                <iframe src="https://www.youtube.com/embed/u5T3g9q_L88" title="ToDo App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/jrtW_00D46U" title="Calculator App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                {//<iframe src="https://www.youtube.com/embed/u5T3g9q_L88" title="ToDo App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+}
+                <video autoPlay loop muted>
+                    <source src={ToDoExplainer} type="video/mp4" />
+                </video>
+                {//<iframe src="https://www.youtube.com/embed/jrtW_00D46U" title="Calculator App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+}
+                <video autoPlay loop muted>
+                    <source src={CalculatorExplainer} type="video/mp4" />
+                </video>
             </div>
         </div>
     )

@@ -9,8 +9,8 @@
 /coverage
 
 # production
-/build
-/videos
+build/
+videos/
 
 # misc
 .DS_Store

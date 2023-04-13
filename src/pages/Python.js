@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
-//import SudokuExplainer from '../videos/Sudoku Solver.mov';
+import SudokuExplainer from '../videos/Sudoku Solver.mov';
 import PaintBackground from '../components/PaintBackground';
-//import TicTacToeExplainer from '../videos/TicTacToe.mov';
+import TicTacToeExplainer from '../videos/TicTacToe.mov';
 import Arrows from '../components/Arrows';
 import "../css/Python.css";
 
@@ -27,10 +27,11 @@ const Python = () => {
                     <ProjectDescription title="Sudoku Solver" text={sudokuText} />
                 </div>
                 <div className="ticTacToeVideo">
-                <iframe src="https://www.youtube.com/embed/rKzwEJpPWMU?mute=1&autoplay=1&fs=0&controls=0" title="TicTacToe App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    {/*<video autoPlay loop muted >
+                {//<iframe src="https://www.youtube.com/embed/rKzwEJpPWMU?mute=1&autoplay=1&fs=0&controls=0" title="TicTacToe App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+}
+                   <video autoPlay loop muted >
                         <source src={TicTacToeExplainer} type="video/mp4" />
-    </video>*/}
+                    </video>
                     <svg width="90%" height="100%" style={{position: "absolute", bottom: "-5%", left: "5%", zIndex: -1}} fill="#141719" >
                         <rect x="0%" y="0%" width="100%" height="100%" />
                     </svg>
@@ -40,10 +41,11 @@ const Python = () => {
                 </div>
                 
                 <div className="sudokuVideo">
-                <iframe src="https://www.youtube.com/embed/sayP1QlUo9A?mute=1&autoplay=1&fs=0&controls=0" title="Sudoku Solver" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    {/*<video autoPlay loop muted >
+                {//<iframe src="https://www.youtube.com/embed/sayP1QlUo9A?mute=1&autoplay=1&fs=0&controls=0" title="Sudoku Solver" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+}
+                   <video autoPlay loop muted >
                         <source src={SudokuExplainer} type="video/mp4" />
-</video>*/}
+                    </video>
                     <svg width="90%" height="100%" style={{position: "absolute", top: "-5%", left: "-5%", zIndex: -1}} fill="#232831" >
                         <rect x="0%" y="0%" width="100%" height="100%" />
                     </svg>

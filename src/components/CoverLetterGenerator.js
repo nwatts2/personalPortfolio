@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
-import CoverLetterExplainer from '../videos/Cover Letter Generator.mov';
+//import CoverLetterExplainer from '../videos/Cover Letter Generator.mov';
 import '../css/CoverLetterGenerator.css';
 
 const CoverLetterGenerator = () => {

@@ -108,7 +108,6 @@
     top: 30%;
     left: 36%;
     width: 15%;
-    z-index: 100;
     transform: rotate(165deg);
     filter: drop-shadow(5px -5px 3px #141719);
     fill: #d9d9d9;
@@ -119,7 +118,6 @@
     top: 53%;
     right: 48%;
     width: 15%;
-    z-index: 100;
     transform: scaleX(-1) rotate(15deg);
     filter: drop-shadow(5px 5px 3px #141719);
     fill: #d9d9d9;

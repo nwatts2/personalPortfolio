@@ -10,6 +10,13 @@ import BackgroundGraphic from './components/BackgroundGraphic'
 
 const App = () => {
     const [page, setPage] = useState("HOME");
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    var sizer = {
+        isMobile: screenWidth <= 768,
+        isTablet: (screenWidth <= 1200 && screenWidth > 768),
+        width: screenWidth
+    };
 
     const color1 = "hsla(0,0%,100%,1)";
     const color2 = "hsla(258.5,59.4%,59.4%,1)";
@@ -18,6 +25,8 @@ const App = () => {
     const color5 = "black";
 
     useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
         const observer = new IntersectionObserver(function (entries, observer) {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -31,18 +40,24 @@ const App = () => {
             observer.observe(element);
         })
 
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+
     }, []);
+
+    function handleResize () {
+        setScreenWidth(window.innerWidth);
+    }
 
 
     return (
         <div className="column pageContainer">
             <div className="pageBackground">
-                {//<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='100' height='82' patternTransform='scale(2) rotate(140)'><rect x='0' y='0' width='100%' height='100%' fill={color1}/><path d='M74.4-14.6l-24 41.1h48l-24-41.1zm0 82l-24 41.1h48l-24-41.1z'  stroke-width='1' stroke='none' fill={color2}/><path d='M0 0l24 41.1L48 0H0zm-1.6 26.5l-24 41.1h48l-24-41.1zm100 0l-24 41.1h48l-24-41.1z'  stroke-width='1' stroke='none' fill={color3}/><path d='M24 41.1l24 41.1 24-41.1H24z'  stroke-width='1' stroke='none' fill={color4}/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
-}
-            <BackgroundGraphic />
-        </div>
+                <BackgroundGraphic />
+            </div>
             <div className="column page">
-                <NavBar page={page} setPage={setPage} />
+                <NavBar page={page} setPage={setPage} sizer={sizer} />
                 <div className="navBarBackground" />
                 <Home />
                 <About />

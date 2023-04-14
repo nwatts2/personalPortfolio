@@ -1,12 +1,20 @@
 import React from 'react';
 
 const PaintBackground = () => {
+
+    const blurAmount = 0;
+
     return (
         <div className='column paintBackground'>
             <svg className="paintOne"
  viewBox="0 0 1280.000000 917.000000"
  preserveAspectRatio="xMidYMid meet">
-<g transform="translate(0.000000,917.000000) scale(0.100000,-0.100000)"
+    <defs>
+        <filter id="blur" x={0} y={0}>
+            <feGaussianBlur in="SourceGraphic" stdDeviation={blurAmount} />
+        </filter>
+    </defs>
+<g transform="translate(0.000000,917.000000) scale(0.100000,-0.100000)" filter="url(#blur)"
 stroke="none">
 <path d="M3328 9159 c-22 -12 -23 -35 -2 -43 30 -11 82 -6 95 10 11 14 10 18
 -6 30 -22 16 -63 18 -87 3z"/>
@@ -542,7 +550,12 @@ l-90 49 -112 0 c-61 0 -114 3 -118 7 -4 4 -1 18 8 31 12 18 22 22 48 20 63 -7
 <svg className="paintTwo"
  viewBox="0 0 1007.000000 1280.000000"
  preserveAspectRatio="xMidYMid meet">
-<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+    <defs>
+        <filter id="blur" x={0} y={0}>
+            <feGaussianBlur in="SourceGraphic" stdDeviation={blurAmount} />
+        </filter>
+    </defs>
+<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" filter="url(#blur)"
 stroke="none">
 <path d="M5760 12785 c-15 -18 -11 -56 20 -200 19 -87 21 -122 17 -270 -4
 -130 -10 -189 -26 -250 -49 -183 -139 -284 -187 -210 -18 27 -51 33 -76 13 -9
@@ -1335,7 +1348,12 @@ c19 20 41 53 50 73 15 37 15 38 60 32 31 -5 51 -2 61 6 21 17 63 -4 67 -33 2
 </svg>
 <svg className="paintThree" viewBox="0 0 1280.000000 928.000000"
  preserveAspectRatio="xMidYMid meet">
-<g transform="translate(0.000000,928.000000) scale(0.100000,-0.100000)"
+    <defs>
+        <filter id="blur" x={0} y={0}>
+            <feGaussianBlur in="SourceGraphic" stdDeviation={blurAmount} />
+        </filter>
+    </defs>
+<g transform="translate(0.000000,928.000000) scale(0.100000,-0.100000)" filter="url(#blur)"
 stroke="none">
 <path d="M7163 9239 c10 -73 72 -119 161 -119 47 0 57 3 68 23 7 12 11 27 10
 33 -1 6 2 31 7 57 l8 47 -130 0 -130 0 6 -41z"/>

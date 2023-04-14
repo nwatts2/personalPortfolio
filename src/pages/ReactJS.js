@@ -9,23 +9,23 @@ const ReactJS = () => {
 
     return (
         <div className='column reactJSContainer pageSection' id='react'>
-            <div className="sectionTitleContainer">
-                <div className="sectionTitle">
-                    <hr style={{margin: "0px 0 10px 0"}}/>
-                    <h1 className="tab" id="REACT">React.js</h1>
-                    <hr style={{margin: "10px 0 0px 0"}}/>
+                <div className="sectionTitleContainer">
+                    <div className="sectionTitle">
+                        <hr style={{margin: "0px 0 10px 0"}}/>
+                        <h1 className="tab" id="REACT">React.js</h1>
+                        <hr style={{margin: "10px 0 0px 0"}}/>
+                    </div>
                 </div>
-            </div>
-            <div className="row react">
-                <div className="reactLeft">
-                    <ImageViewer mode={'REACT'} />
+                <div className="row react">
+                    <div className="reactLeft">
+                        <ImageViewer mode={'REACT'} />
+                    </div>
+                    <div className="reactRight">
+                        <ProjectDescription title="Noah's Election Machine" text={electionText} link="noahs-election-machine" />
+                        <ElectionBanner />
+                    </div>
                 </div>
-                <div className="reactRight">
-                    <ProjectDescription title="Noah's Election Machine" text={electionText} link="noahs-election-machine" />
-                    <ElectionBanner />
-                </div>
-            </div>  
-        </div>      
+        </div>  
     );
 }
 

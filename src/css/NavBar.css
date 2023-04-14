@@ -23,29 +23,7 @@
     z-index: 10;
   }
   
-  .navBarName {
-    width: 60%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 5;
-  }
-  
-  .navBarName img {
-    height: 35px;
-  }
-  
-  .navBarLogo {
-    width: 17%;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .navBarLogo h1 {
+  .navBarContainer h1 {
     font-size: auto;
     font-family: "3D Isometric";
     text-align: center;
@@ -60,54 +38,22 @@
     position: absolute;
     top: 0;
     left: 5px;
+    z-index: 5;
   }
   
-  .navBarLogo h2 {
+  .navBarContainer h2 {
     font-size: 1.2rem;
     font-family: "Amne Sans";
     width: auto;
-    margin: 10px 0px 0px 0px;
     padding: 5px 10px 0px 10px;
     background-color: #232831;
     border-radius: 20px 10px 20px 10px;
     white-space: nowrap;
-  
+    position: fixed;
+    top: 45px;
+    left: 75px;
+    z-index: 6;
   }
-  
-  .navBarName .social {
-    width: 71%;
-    height: 55px;
-    position: absolute;
-    top: 12px;
-    left: 340px;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .navBarName .social a {
-    height: 60%;
-    margin: 0px 6px;
-    transition: all .2s ease-in-out;
-  }
-  
-  .navBarName .social svg {
-    height: 100%;
-    fill: #d9d9d9;
-  }
-  
-  .navBarName .social .githubLogo { fill: #d9d9d9; transition: all .2s ease-in-out }
-  .navBarName .social .indeedLogoBG { fill: transparent; transition: all .2s ease-in-out }
-  .navBarName .social .indeedLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
-  .navBarName .social .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
-  .navBarName .social .electionLogoRed { fill: #d9d9d9; transition: all .2s ease-in-out }
-  .navBarName .social .electionLogoBlue { fill: #a9a9a9; transition: all .2s ease-in-out }
-  
-  .navBarName .social svg:hover .githubLogo { fill: white; transition: all .2s ease-in-out }
-  .navBarName .social svg:hover .indeedLogoBG { fill: #069; transition: all .2s ease-in-out }
-  .navBarName .social svg:hover .indeedLogoLetters { fill: white; transition: all .2s ease-in-out }
-  .navBarName .social svg:hover .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
-  .navBarName .social svg:hover .electionLogoRed { fill: #fa1a54; transition: all .2s ease-in-out }
-  .navBarName .social svg:hover .electionLogoBlue { fill: #3146ff; transition: all .2s ease-in-out }
   
   .navBar {
     justify-content: space-evenly;
@@ -120,13 +66,15 @@
     z-index: 5;
   }
   
-  .navBar h2 {
+  .navBar h3 {
     margin: 0;
     padding: 10px;
     width: 125px;
     text-align: center;
     z-index: 5;
-    font-family: "Turpis";
+    font-family: "Courier";
+    font-size: 1.3rem;
+    margin: 5px 0px 0px 0px;
     white-space: nowrap;
     position: absolute;
   }

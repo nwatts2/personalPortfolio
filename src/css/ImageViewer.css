@@ -23,16 +23,13 @@
 
 .imageViewerDisplayContainer svg {
     width: 100%;
-    fill: #232831;
+    fill: #F15455;
     transition: all .1s ease-in-out;
 }
 
-.imageViewerDisplayContainer .prevImageButton svg {
-    fill: #F15455;
-}
-
-.imageViewerDisplayContainer .prevImageButton:active svg, .imageViewerDisplayContainer .nextImageButton:active svg, .imageViewerDisplayContainer .prevImageButton:hover svg, .imageViewerDisplayContainer .prevImageButton:hover svg {
+.imageViewerDisplayContainer .prevImageButton:active svg, .imageViewerDisplayContainer .nextImageButton:active svg, .imageViewerDisplayContainer .prevImageButton:hover svg, .imageViewerDisplayContainer .nextImageButton:hover svg {
     fill: #d9d9d9;
+    cursor: pointer;
 }
 
 .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton {
@@ -84,6 +81,7 @@
     border-bottom: 3px solid white;
     padding: 10px 20px;
     background: linear-gradient(to right, transparent, #232831B0 30%, #232831B0 70%, transparent);
+    backdrop-filter: blur(2px);
     z-index: 1;
 }
 
@@ -111,6 +109,7 @@
 
 .imageSelector .imageContainer:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .imageSelector .imageContainer img {

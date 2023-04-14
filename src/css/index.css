@@ -98,6 +98,23 @@ a {
   position: fixed;
 }
 
+.reactPythonContent {
+  width: 100%;
+  position: relative;
+}
+
+.reactPythonWrapper {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #141719B0;
+  backdrop-filter: blur(2px);
+  box-shadow: -5px 5px 3px 0px #141719;
+  padding: 40px 0px 0px 0px;
+  z-index: 1;
+}
+
 .page {
   max-width: 1800px;
   justify-content: flex-start;

@@ -7,6 +7,8 @@ import ReactJS from "./pages/ReactJS"
 import Python from './pages/Python'
 import Contact from './pages/Contact'
 import BackgroundGraphic from './components/BackgroundGraphic'
+import Social from './components/Social';
+import ReactPythonBackground from './components/ReactPythonBackground';
 
 const App = () => {
     const [page, setPage] = useState("HOME");
@@ -62,9 +64,15 @@ const App = () => {
                 <Home />
                 <About />
                 <Swift />
-                <ReactJS />
-                <Python />
+                <div className='reactPythonContent'>
+                    <div className='reactPythonWrapper'>
+                        <ReactJS />
+                        <Python />
+                    </div>
+                    <ReactPythonBackground />
+                </div>
                 <Contact />
+                <Social />
             </div>
             <div className='pageEnd' />
         </div>

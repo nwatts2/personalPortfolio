@@ -10,7 +10,7 @@ const CoverLetterGenerator = () => {
         <div className='row coverLetterGenerator'>
             <div className='column coverLetterGeneratorLeft'>
                 <h2>MacOS Projects</h2>
-                <ProjectDescription title="Cover Letter Generator App" text={letterText} link={"Cover-Letter-Generator"} />
+                <ProjectDescription title="Cover Letter Generator" text={letterText} link={"Cover-Letter-Generator"} />
             </div>
             <div className='row coverLetterGeneratorRight'>
             {//<iframe src="https://www.youtube.com/embed/2f9ai4mtRYI?mute=1&autoplay=1&controls=0&fs=0" title="Cover Letter Generator App Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

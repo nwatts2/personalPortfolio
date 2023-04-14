@@ -12,6 +12,7 @@
     width: 50%;
     top: 30%;
     left: -25%;
+    visibility: hidden;
 }
 
 .cityBackground .medBuilding {
@@ -20,7 +21,6 @@
     width: 50%;
     top: 2%;
     left: -105%;
-
 }
 
 .cityBackground .building3 {

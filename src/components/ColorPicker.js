@@ -17,7 +17,7 @@ const ColorPicker = () => {
             </div>
             <div className='column colorPickerRight'>
                 <h2>MacOS Projects</h2>
-                <ProjectDescription title="Color Picker App" text={colorText} link={"Color-Picker"} />
+                <ProjectDescription title="Color Picker" text={colorText} link={"Color-Picker"} />
             </div>
             
         </div>

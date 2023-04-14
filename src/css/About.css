@@ -55,6 +55,7 @@
     box-shadow: -5px 5px 5px #141719;
     z-index: 1;
     background: #141719B0;
+    backdrop-filter: blur(2px);
 }
 
 .aboutBox hr {

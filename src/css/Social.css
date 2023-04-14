@@ -1,0 +1,37 @@
+.social {
+    width: 55px;
+    height: 180px;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background: #14171999;
+    padding: 10px 5px;
+    border-radius: 50px;
+    z-index: 6;
+}
+  
+.social a {
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+  
+.social svg {
+    fill: #d9d9d9;
+    width: 80%;
+}
+  
+.social .githubLogo { fill: #d9d9d9; transition: all .2s ease-in-out }
+.social .indeedLogoBG { fill: transparent; transition: all .2s ease-in-out }
+.social .indeedLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
+.social .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
+.social .electionLogoRed { fill: #d9d9d9; transition: all .2s ease-in-out }
+.social .electionLogoBlue { fill: #a9a9a9; transition: all .2s ease-in-out }
+  
+.social svg:hover .githubLogo { fill: white; transition: all .2s ease-in-out }
+.social svg:hover .indeedLogoBG { fill: #069; transition: all .2s ease-in-out }
+.social svg:hover .indeedLogoLetters { fill: white; transition: all .2s ease-in-out }
+.social svg:hover .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
+.social svg:hover .electionLogoRed { fill: #fa1a54; transition: all .2s ease-in-out }
+.social svg:hover .electionLogoBlue { fill: #3146ff; transition: all .2s ease-in-out }

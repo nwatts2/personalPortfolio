@@ -4,7 +4,7 @@ import ProjectDescription from '../components/ProjectDescription';
 import ElectionBanner from '../components/ElectionBanner';
 import ImageViewer from '../components/ImageViewer';
 
-const ReactJS = () => {
+const ReactJS = ({ setShowImage }) => {
     const electionText = ["My first major React.js application was definitely a passion project for me. I wanted to build an election tracking website where I could post my thoughts, predictions, and be able to view all available election data for the 2022 US Midterm elections, all from a single spot. It was two months until the midterms, and I had only just learned the basics of React, so I had a lot on my plate.", "For the election updates/data, I decided to go with web-scrapers instead of calling from an API because there weren’t any cheaply available options that would offer what I was needing. So, I created a network of web-scrapers using Python to collect as much election data as possible, and hooked it up to a personal MongoDB database.", "When I finished the website, you could view past election results, play out your own scenarios for election night, and view incoming election data for all Senate, House, and Gubernatorial elections. Since then, I’ve spent several months learning and working more with React, including building the website you’re reading this on!"];
 
     return (
@@ -18,7 +18,7 @@ const ReactJS = () => {
                 </div>
                 <div className="row react">
                     <div className="reactLeft">
-                        <ImageViewer mode={'REACT'} />
+                        <ImageViewer setShowImage={setShowImage} />
                     </div>
                     <div className="reactRight">
                         <ProjectDescription title="Noah's Election Machine" text={electionText} link="noahs-election-machine" />

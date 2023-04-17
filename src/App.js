@@ -9,10 +9,12 @@ import Contact from './pages/Contact'
 import BackgroundGraphic from './components/BackgroundGraphic'
 import Social from './components/Social';
 import ReactPythonBackground from './components/ReactPythonBackground';
+import ImageModal from './components/ImageModal';
 
 const App = () => {
     const [page, setPage] = useState("HOME");
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [showImage, setShowImage] = useState(null);
 
     var sizer = {
         isMobile: screenWidth <= 768,
@@ -66,7 +68,7 @@ const App = () => {
                 <Swift />
                 <div className='reactPythonContent'>
                     <div className='reactPythonWrapper'>
-                        <ReactJS />
+                        <ReactJS setShowImage={setShowImage} />
                         <Python />
                     </div>
                     <ReactPythonBackground />
@@ -75,6 +77,9 @@ const App = () => {
                 <Social />
             </div>
             <div className='pageEnd' />
+            {showImage !== null &&
+                <ImageModal image={showImage} setShowImage={setShowImage} />
+            }
         </div>
         
     )

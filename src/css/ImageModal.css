@@ -1,0 +1,66 @@
+.imageModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #141719B0;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    transition: opacity .3s ease-in-out;
+}
+
+.imageModal .imageContainer svg {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 75px;
+    fill: #d9d9d9;
+    z-index: 2;
+    transition: fill .2s ease-in-out;
+}
+
+.imageModal .imageContainer svg:hover {
+    fill: #F15455;
+    cursor: pointer;
+}
+
+.imageModal .imageContainer {
+    max-width: 70%;
+    max-height: 80%;
+    position: relative;
+}
+
+.imageModal img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: -5px 5px 3px 0px #141719;
+    z-index: 1;
+}
+
+.imageModalBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes floatIn {
+    0% {
+        transform: translateY(150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes floatOut {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(150%);
+    }
+}

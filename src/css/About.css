@@ -69,3 +69,13 @@
     font-size: 1.1rem;
     line-height: 1.5rem;
 }
+
+@media screen and (max-width: 1400px) {
+    .aboutContainer { max-height: none }
+    .aboutBox { width: 85%; margin: 20px 0px 0px 0px }
+    .aboutBox p { font-size: 1rem; line-height: 1.3rem; }
+}
+
+@media screen and (max-width: 740px) {
+
+}

@@ -27,26 +27,26 @@ const Python = () => {
                         <ProjectDescription title="Sudoku Solver" text={sudokuText} />
                     </div>
                     <div className="ticTacToeVideo">
-                    <video autoPlay loop muted >
+                        <video autoPlay loop muted >
                             <source src={TicTacToeExplainer} type="video/mp4" />
                         </video>
-                        <svg width="90%" height="100%" style={{position: "absolute", bottom: "-5%", left: "5%", zIndex: -1, animation: "floatLargeUp 5s ease-in-out infinite"}} fill="#141719" >
+                        <svg className="backBlock1" >
                             <rect x="0%" y="0%" width="100%" height="100%" />
                         </svg>
-                        <svg width="90%" height="100%" style={{position: "absolute", bottom: "-2.5%", left: "2.5%", zIndex: -1, animation: "floatSmallUp 5s ease-in-out infinite"}} fill="#F15455" >
-                            <rect x="0%" y="0%" width="100%" height="100%" style={{strokeWidth: 10, stroke: "transparent"}} />
+                        <svg className="frontBlock1" >
+                            <rect x="0%" y="0%" width="100%" height="100%" />
                         </svg>
                     </div>
                     
                     <div className="sudokuVideo">
-                    <video autoPlay loop muted >
+                        <video autoPlay loop muted >
                             <source src={SudokuExplainer} type="video/mp4" />
                         </video>
-                        <svg width="90%" height="100%" style={{position: "absolute", top: "-5%", left: "-5%", zIndex: -1, animation: "floatLargeDown 5s ease-in-out infinite"}} fill="#232831" >
+                        <svg className="backBlock2" >
                             <rect x="0%" y="0%" width="100%" height="100%" />
                         </svg>
-                        <svg width="90%" height="100%" style={{position: "absolute", top: "-2.5%", left: "-2.5%", zIndex: -1, animation: "floatSmallDown 5s ease-in-out infinite"}} fill="#d9d9d9" >
-                            <rect x="0%" y="0%" width="100%" height="100%" style={{strokeWidth: 10, stroke: "transparent"}} />
+                        <svg className="frontBlock2" >
+                            <rect x="0%" y="0%" width="100%" height="100%" />
                         </svg>
                     </div>
                     

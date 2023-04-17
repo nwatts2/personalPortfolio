@@ -77,3 +77,8 @@
     left: 70%;
     fill: #f15455;
 }
+
+@media screen and (max-width: 1400px) {
+    .reactJSContainer { max-height: none }
+    .electionBanner { top: -30% }
+}

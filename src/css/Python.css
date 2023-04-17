@@ -103,6 +103,58 @@
     fill: #d9d9d9;
 }
 
+.backBlock1 {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    z-index: -1;
+    animation: floatLargeUp 5s ease-in-out infinite;
+    fill: #141719;
+}
+
+.frontBlock1 {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    bottom: -2.5%;
+    left: 2.5%;
+    z-index: -1;
+    animation: floatSmallUp 5s ease-in-out infinite;
+    fill: #F15455;
+}
+
+.backBlock2 {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    z-index: -1;
+    animation: floatLargeDown 5s ease-in-out infinite;
+    fill: #232831;
+}
+
+.frontBlock2 {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -2.5%;
+    left: -2.5%;
+    z-index: -1;
+    animation: floatSmallDown 5s ease-in-out infinite;
+    fill: #d9d9d9;
+}
+
+@media screen and (max-width: 1400px) {
+    .pythonContainer { max-height: none }
+    .python .ticTacToeVideo { right: 5% }
+    .python .ticTacToeText { top: 50px; }
+    .python .sudokuVideo { bottom: 50px }
+    .python .sudokuText { bottom: 100px }
+}
+
 @keyframes floatSmallUp {
     50% {
         transform: translateY(-30px);

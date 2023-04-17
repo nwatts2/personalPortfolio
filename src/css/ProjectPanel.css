@@ -145,3 +145,19 @@
     width: 65%;
     transform: translate(27%, -50%) rotate(240deg);
 }
+
+@keyframes floatOutRight { 
+    100% { transform: translateX(100%) } 
+}
+@keyframes floatOutLeft { 
+    100% { transform: translateX(-100%) } 
+}
+
+@keyframes floatInRight {
+    0% { transform: translateX(-100%) }
+    100% { transform: translateX(0%) }
+}
+@keyframes floatInLeft { 
+    0% { transform: translateX(100%) } 
+    100% { transform: translateX(0%) } 
+}

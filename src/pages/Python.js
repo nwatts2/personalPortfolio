@@ -20,13 +20,10 @@ const Python = () => {
                     </div>
                 </div>
                 <div className="row python" id="python">
-                    <div className="ticTacToeText">
+                    <div className="row ticTacToeText">
                         <ProjectDescription title="TicTacToe" text={ticTacToeText} />
                     </div>
-                    <div className="sudokuText">
-                        <ProjectDescription title="Sudoku Solver" text={sudokuText} />
-                    </div>
-                    <div className="ticTacToeVideo">
+                    <div className="row ticTacToeVideo">
                         <video autoPlay loop muted >
                             <source src={TicTacToeExplainer} type="video/mp4" />
                         </video>
@@ -37,8 +34,10 @@ const Python = () => {
                             <rect x="0%" y="0%" width="100%" height="100%" />
                         </svg>
                     </div>
-                    
-                    <div className="sudokuVideo">
+                    <div className="row sudokuText">
+                        <ProjectDescription title="Sudoku Solver" text={sudokuText} />
+                    </div>
+                    <div className="row sudokuVideo">
                         <video autoPlay loop muted >
                             <source src={SudokuExplainer} type="video/mp4" />
                         </video>

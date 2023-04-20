@@ -150,7 +150,7 @@ a {
 }
 
 @media screen and (max-width: 740px) {
-  .pageSection { margin: 0px 0px 150px 0px; }
+  .pageSection { margin: 0px 0px 50px 0px; }
   .page { padding: 0; }
   .sectionTitleContainer { justify-content: center; }
   .sectionTitle h1 { font-size: 2.5rem; }

@@ -13,10 +13,10 @@ const Contact = () => {
                 </div>
             </div>
             <div className="column contact" id="contact">
-            <div className="contactBackground">
+            <div className="column contactBackground">
                 <ScaleBackground />
-                <div className="row contactBox">
-                    <div className="column contactBoxBlock" style={{top: '7%', left: "3%"}} onClick={() => {window.open("https://www.linkedin.com/in/noahwatts/", '_blank', 'noreferrer')}}>
+                <div className="column contactBox">
+                    <div className="column contactBoxBlock box1" onClick={() => {window.open("https://www.linkedin.com/in/noahwatts/", '_blank', 'noreferrer')}}>
                         <div className="row contactBoxEntry">
                             <div className="column contactBoxSVG">
                                 <svg style={{border: "3px solid #d9d9d9", borderRadius: "10px"}} viewBox="0 0 256 256"><path d="M77.796 214.238V98.986H39.488v115.252H77.8zM58.65 83.253c13.356 0 21.671-8.85 21.671-19.91-.25-11.312-8.315-19.915-21.417-19.915-13.111 0-21.674 8.603-21.674 19.914 0 11.06 8.312 19.91 21.169 19.91h.248zM99 214.238h38.305v-64.355c0-3.44.25-6.889 1.262-9.346 2.768-6.885 9.071-14.012 19.656-14.012 13.858 0 19.405 10.568 19.405 26.063v61.65h38.304v-66.082c0-35.399-18.896-51.872-44.099-51.872-20.663 0-29.738 11.549-34.78 19.415h.255V98.99H99.002c.5 10.812-.003 115.252-.003 115.252z" fill="#d9d9d9"/></svg>
@@ -26,7 +26,7 @@ const Contact = () => {
                         </div>
                         <p>{"linkedin.com/in/noahwatts"}</p>
                     </div>
-                    <div className="column contactBoxBlock" style={{top: '7%', left: "40%"}} onClick={() => {window.open("mailto: nwatts2@uccs.edu", '_blank', 'noreferrer')}}>
+                    <div className="column contactBoxBlock box2" onClick={() => {window.open("mailto: nwatts2@uccs.edu", '_blank', 'noreferrer')}}>
                         <div className="row contactBoxEntry">
                             <div className="column contactBoxSVG">
                                 <svg viewBox="0 0 24 24" fill="none" >
@@ -39,7 +39,7 @@ const Contact = () => {
                         </div>
                         <p>nwatts2@uccs.edu</p>
                     </div>
-                    <div className="column contactBoxBlock" style={{top: '7%', left: "70%"}} onClick={() => {window.open("tel:+17196843010", '_blank', 'noreferrer')}}>
+                    <div className="column contactBoxBlock box3" onClick={() => {window.open("tel:+17196843010", '_blank', 'noreferrer')}}>
                         <div className="row contactBoxEntry">
                             <div className="column contactBoxSVG">
                                 <svg viewBox="0 0 24 24" fill="none">
@@ -54,7 +54,7 @@ const Contact = () => {
                         </div>
                         <p>{"(719) 684-3010"}</p>
                     </div>
-                    <div className="column contactBoxBlock" style={{top: '50%', left: "20%"}} onClick={() => {window.open("https://github.com/nwatts2", '_blank', 'noreferrer')}}>
+                    <div className="column contactBoxBlock box4" onClick={() => {window.open("https://github.com/nwatts2", '_blank', 'noreferrer')}}>
                         <div className="row contactBoxEntry">
                             <div className="column contactBoxSVG">
                                 <svg viewBox="0 0 24 24" fill="none" >
@@ -68,7 +68,7 @@ const Contact = () => {
                         </div>
                         <p>{"github.com/nwatts2"}</p>
                     </div>
-                    <div className="column contactBoxBlock" style={{top: '50%', left: "55%"}} onClick={() => {window.open("https://www.buymeacoffee.com/noahwatts", '_blank', 'noreferrer')}}>
+                    <div className="column contactBoxBlock box5" onClick={() => {window.open("https://www.buymeacoffee.com/noahwatts", '_blank', 'noreferrer')}}>
                         <div className="row contactBoxEntry">
                             <div className="column contactBoxSVG">
                                 <svg viewBox="0 0 24 24" fill="none" style={{marginLeft: "4px"}} >

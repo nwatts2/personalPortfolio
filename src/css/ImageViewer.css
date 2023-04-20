@@ -164,5 +164,7 @@
 @media screen and (max-width: 740px) {
     .imageViewer { height: auto }
     .imageViewerDisplayContainer { width: 100% }
-    .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton { width: 15% }
+    .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton { visibility: hidden; }
+    .imageSelector { width: 95%; flex-flow: row wrap; }
+    .imageSelector .imageContainer { width: 45%; margin: 10px 0px }
 }

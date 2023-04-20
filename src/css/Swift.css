@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .swiftContainer { }
+    .swift { width: 100%; }
 }
 
 @media screen and (max-width: 740px) {

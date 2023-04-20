@@ -22,7 +22,10 @@
     right: 3%;
 }
 
+@media screen and (max-width: 1000px) {
+    .cityBackground .building1 { visibility: hidden }
+}
+
 @media screen and (max-width: 740px) {
-    .cityBackground .building1 { width: 70%; left: -15%; top: -70%; }
     .cityBackground .building2 { width: 70%; top: -5%; right: -15%; }
 }

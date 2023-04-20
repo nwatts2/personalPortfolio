@@ -31,6 +31,8 @@
 .python video {
     box-shadow: -5px 5px 3px 0px #141719;
     height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .python .ticTacToeText {
@@ -56,8 +58,8 @@
     top: 20px; 
     right: 10%; 
     height: 55%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .python .sudokuVideo { 
@@ -65,8 +67,8 @@
     bottom: 100px; 
     left: 7%; 
     height: 55%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .pythonContainer .arrows {
@@ -144,7 +146,7 @@
     .pythonContainer { height: 1100px }
     .python .ticTacToeVideo { right: 5% }
     .python .ticTacToeText { top: 50px; }
-    .python .sudokuVideo { bottom: 50px }
+    .python .sudokuVideo { bottom: 50px; left: 5%; }
     .python .sudokuText { bottom: 80px }
     .pythonContainer .arrow1 { top: 35%;  }
 }
@@ -157,6 +159,10 @@
     .python .sudokuText { position: relative; width: 90%; bottom: auto; right: auto; }
     .python .sudokuVideo { position: relative; height: 450px; overflow: hidden; bottom: auto; left: auto; }
     .pythonContainer .arrows { visibility: hidden }
+}
+
+@media screen and (min-width: 1800px) {
+    .pythonContainer {height: 1300px}
 }
 
 @keyframes floatSmallUp {

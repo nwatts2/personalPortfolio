@@ -118,6 +118,7 @@ a {
 
 .page {
   max-width: 1800px;
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
   background: linear-gradient(to bottom, #232831 10%, #30475D 50%, #232831 90%);
@@ -131,7 +132,7 @@ a {
 }
 
 .pageSection {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0px 0px 100px 0px;
 }
@@ -146,4 +147,11 @@ a {
   border-top: 10px solid #f15455;
   z-index: 1;
   margin: 0;
+}
+
+@media screen and (max-width: 740px) {
+  .pageSection { margin: 0px 0px 150px 0px; }
+  .page { padding: 0; }
+  .sectionTitleContainer { justify-content: center; }
+  .sectionTitle h1 { font-size: 2.5rem; }
 }

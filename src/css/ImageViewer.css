@@ -160,3 +160,9 @@
 
 .activeImage { opacity: 1; width: 100%;}
 .inactiveImage { opacity: 0; width: 100%;}
+
+@media screen and (max-width: 740px) {
+    .imageViewer { height: auto }
+    .imageViewerDisplayContainer { width: 100% }
+    .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton { width: 15% }
+}

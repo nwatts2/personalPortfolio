@@ -6,16 +6,7 @@
     position: absolute;
 }
 
-.cityBackground .bigBuilding {
-    position: absolute;
-    fill: #d9d9d9;
-    width: 50%;
-    top: 30%;
-    left: -25%;
-    visibility: hidden;
-}
-
-.cityBackground .medBuilding {
+.cityBackground .building1 {
     position: absolute;
     fill: #232831;
     width: 50%;
@@ -23,7 +14,7 @@
     left: -105%;
 }
 
-.cityBackground .building3 {
+.cityBackground .building2 {
     position: absolute;
     fill: #232831;
     width: 50%;
@@ -31,11 +22,7 @@
     right: 3%;
 }
 
-.cityBackground .building4 {
-    position: absolute;
-    fill: #d9d9d9;
-    width: 50%;
-    bottom: 9%;
-    right: 20%;
-    visibility: hidden;
+@media screen and (max-width: 740px) {
+    .cityBackground .building1 { width: 70%; left: -15%; top: -70%; }
+    .cityBackground .building2 { width: 70%; top: -5%; right: -15%; }
 }

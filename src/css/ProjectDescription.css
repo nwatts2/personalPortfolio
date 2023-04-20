@@ -17,23 +17,20 @@
     border-radius: 5px;
     border: 2px solid #30475D;
     text-shadow: 0px 0px 5px black;
+    transition: all .2s ease-in-out;
 }
 
 .projectDescription h3 { top: -33px; }
 .projectDescription h4 { bottom: -36px; right: 30px; border-radius: 30px; }
 
-.projectDescription a {
-    opacity: 1;
-    transition: all .2s ease-in-out;
+.projectDescription h4:hover {
+    transform: scale(1.05);
 }
 
-.projectDescription a:hover {
-    opacity: 0.7;
-    transition: all .2s ease-in-out;
+.projectDescription span {
+    margin: 0;
+    color: #f15455;
 }
-
-/*.ios .projectDescription h3 { top: -20%; }
-.colorPicker .projectDescription h3 { top: -13%; }*/
 
 @media screen and (max-width: 1400px) {
     .projectDescription p { font-size: 0.8rem; }

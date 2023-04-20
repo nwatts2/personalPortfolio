@@ -3,9 +3,10 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    position: relative;
     margin: 60px 0px 0px 0px;
     width: 100%;
-    min-height: 95vh;
+    min-height: 900px;
     max-height: 1000px;
 }
 
@@ -24,6 +25,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items:center;
+    position: relative;
     width: 50%;
     height: 100%;
 }
@@ -42,10 +44,10 @@
     border-radius: 10px 20px 10px 20px;
     margin: 0;
     padding: 0;
-    width: fit-content;
     line-height: 1px;
     font-style: italic;
     text-shadow: 0px 0px 5px black;
+    white-space: nowrap;
 
 }
 
@@ -88,10 +90,10 @@
 }
 
 .deskImageContainer .paintBackground {
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    width: 95%;
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
     z-index: 0;
 }
 
@@ -103,13 +105,13 @@
     fill: #d9d9d9;
     z-index: 1;
     width: 100%;
-    transform: translate(15%, -30%)
+    transform: translate(15%, -20%)
 }
 
 .deskImageContainer .paintTwo { 
     fill: #141719; 
     z-index: 0;
-    transform: translate(0%, -10%)
+    transform: translate(0%, -20%)
 }
 
 .deskImageContainer .paintThree { 
@@ -119,17 +121,26 @@
 }
 
 .deskImageContainer img {
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
 @media screen and (max-width: 1400px) {
-    .home { min-height: 100vh; max-height: none }
-    .homeLeft { width: 55% }
-    .homeRight { width: 45% }
+    .home { max-height: none }
+    .home h1 { font-size: 1.5rem; }
     .purposeStatement { width: 95%; }
+    .purposeStatement p { font-size: 1rem; line-height: 1.3rem; }
 }
 
 @media screen and (max-width: 740px) {
+    .home { flex-flow: column nowrap; margin: 100px 0px 0px 0px}
+    .homeLeft, .homeRight { height: 50%; width:100%; padding: 0; justify-content: center; align-items: center; }
+    .homeLeft h1 { font-size: 1.3rem; line-height: 1.8rem; margin: 30px 0px 0px 0px; text-align: center;}
+    .homeLeft .purposeStatement { margin: 30px 0px 0px 0px; }
+    .homeRight { margin: 50px 0px }
+    .deskImageContainer { width: 100%; }
+}
 
+@media screen and (max-height: 800px) {
+    .home { min-height: 100vh }
 }

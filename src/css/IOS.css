@@ -33,16 +33,6 @@
     text-shadow: 0px 0px 5px black;
 }
 
-.ios iframe {
-    height: 100%;
-    width: 40%;
-    border-radius: 20px;
-    outline: 3px solid #f15455;
-    border: 3px solid #d9d9d9;
-    box-shadow: -5px 5px 3px 0px #141719;
-    z-index: 1;
-}
-
 .ios video {
     width: auto;
     height: 100%;
@@ -51,4 +41,11 @@
     border: 3px solid #d9d9d9;
     box-shadow: -5px 5px 3px 0px #141719;
     z-index: 1;
+}
+
+@media screen and (max-width: 740px) {
+    .ios { flex-flow: column nowrap; justify-content: center; align-items: center; }
+    .ios h2 { font-size: 1.7rem; align-self: flex-start }
+    .ios p { text-align: center; }
+    .ios video { width: 70%; height: auto; margin: 20px 0px; }
 }

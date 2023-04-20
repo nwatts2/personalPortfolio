@@ -3,10 +3,9 @@ import React from 'react';
 import IOS from '../components/IOS';
 import ColorPicker from '../components/ColorPicker';
 import CoverLetterGenerator from '../components/CoverLetterGenerator';
-import PaintBackground from '../components/PaintBackground';
 import '../css/ProjectPanel.css';
 
-const ProjectPanel = ({ mode, numProjects }) => {
+const ProjectPanel = ({ mode, numProjects, sizer }) => {
     const [activePanel, setActivePanel] = useState(0)
     const [panels, setPanels] = useState([])
 
@@ -77,13 +76,13 @@ const ProjectPanel = ({ mode, numProjects }) => {
                 { mode === "SWIFT" &&
                 <div className="row projectPanelDisplay">
                     <div className={activePanel === 0 ? "panel activePanel" : "panel inactivePanel"} style={panelAnimation} >
-                        <IOS />
+                        <IOS sizer={sizer} />
                     </div>
                     <div className={activePanel === 1 ? "panel activePanel" : "panel inactivePanel"} style={panelAnimation} >
-                        <ColorPicker />
+                        <ColorPicker sizer={sizer} />
                     </div>
                     <div className={activePanel === 2 ? "panel activePanel" : "panel inactivePanel"} style={panelAnimation} >
-                        <CoverLetterGenerator />
+                        <CoverLetterGenerator sizer={sizer} />
                     </div>
                 </div>
                 }
@@ -96,7 +95,6 @@ const ProjectPanel = ({ mode, numProjects }) => {
                     return <hr className={panelNumber === activePanel ? "selected" : ""} onClick={() => {setActivePanel(panelNumber)}} />
                 })}
             </div>
-            <PaintBackground />
         </div>
     )
 }

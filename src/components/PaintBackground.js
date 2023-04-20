@@ -5,7 +5,7 @@ const PaintBackground = () => {
     const blurAmount = 0;
 
     return (
-        <div className='column paintBackground'>
+        <div className='paintBackground'>
             <svg className="paintOne"
  viewBox="0 0 1280.000000 917.000000"
  preserveAspectRatio="xMidYMid meet">

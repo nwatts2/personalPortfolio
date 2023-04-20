@@ -12,7 +12,7 @@ const Home = () => {
                 </div>
                 <h1>{"I’m a"} <span className='purposeEmphasis'>Software Developer</span> {"with a passion for"} <span className='purposeEmphasis'>bringing ideas to life.</span></h1>
                 <div className="purposeStatement">
-                    <p>{"As an early career full-stack developer, I have experience working with several popular modern languages and frameworks, such as JavaScript/React.js/Node.js, Swift/SwiftUI, and Python. I’ve also integrated dedicated databases into several of my projects, using primarily MongoDB."}</p>
+                    <p>{"I create powerful tools for iOS, MacOS, and the web, and I love every minute of it."}</p>
                 </div>
             </div>
             <div className="homeRight">

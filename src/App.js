@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import NavBar from "./components/NavBar"
+import MobileNavBar from './components/MobileNavBar'
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Swift from "./pages/Swift"
@@ -17,8 +18,8 @@ const App = () => {
     const [showImage, setShowImage] = useState(null);
 
     var sizer = {
-        isMobile: screenWidth <= 768,
-        isTablet: (screenWidth <= 1200 && screenWidth > 768),
+        isMobile: screenWidth <= 740,
+        isTablet: (screenWidth <= 1200 && screenWidth > 740),
         width: screenWidth
     };
 
@@ -61,11 +62,16 @@ const App = () => {
                 <BackgroundGraphic />
             </div>
             <div className="column page">
-                <NavBar page={page} setPage={setPage} sizer={sizer} />
-                <div className="navBarBackground" />
+                {sizer.width >= 1150 &&
+                    <NavBar page={page} setPage={setPage} sizer={sizer} />
+                }
+                {sizer.width < 1150 &&
+                    <MobileNavBar setPage={setPage} sizer={sizer} />
+                }
+                <div className={sizer.width >= 1150 ? "navBarBackground" : "mobileNavBarBackground"} />
                 <Home />
                 <About />
-                <Swift />
+                <Swift sizer={sizer} />
                 <div className='reactPythonContent'>
                     <div className='reactPythonWrapper'>
                         <ReactJS setShowImage={setShowImage} />
@@ -74,7 +80,7 @@ const App = () => {
                     <ReactPythonBackground />
                 </div>
                 <Contact />
-                <Social />
+                <Social sizer={sizer} />
             </div>
             <div className='pageEnd' />
             {showImage !== null &&

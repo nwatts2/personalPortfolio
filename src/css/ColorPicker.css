@@ -35,9 +35,9 @@
     text-shadow: 0px 0px 5px black;
 }
 
-.colorPicker iframe {
-    height: 80%;
-    width: 100%;
+.colorPicker video {
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 20px;
     outline: 3px solid #f15455;
     border: 3px solid #d9d9d9;
@@ -45,11 +45,9 @@
     z-index: 1;
 }
 
-.colorPicker video {
-    height: 80%;
-    border-radius: 20px;
-    outline: 3px solid #f15455;
-    border: 3px solid #d9d9d9;
-    box-shadow: -5px 5px 3px 0px #141719;
-    z-index: 1;
+@media screen and (max-width: 740px) {
+    .colorPicker { flex-flow: column nowrap; justify-content: center; align-items: center; }
+    .colorPicker h2 { font-size: 1.7rem; align-self: flex-start; margin: 20px 0px 20px 10px; }
+    .colorPicker p { text-align: center; }
+    .colorPicker video { width: 90%; height: auto; margin: 20px 0px; }
 }

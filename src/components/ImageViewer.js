@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import React from 'react';
-import SenateCallSim from '../images/Senate Call Sim.png'
-import GubernatorialResults2018 from '../images/2018 Gubernatorial Results.png'
-import GubernatorialResults2022 from '../images/Gubernatorial Results.png'
-import HouseResults from '../images/House Results.png'
-import MainPage from '../images/Main Page.png'
-import AlaskaResults from '../images/Alaska House Breakdown.png'
+import SenateCallSim from '../images/CallSim.png'
+import GubernatorialResults2018 from '../images/2018GovResults.png'
+import GubernatorialResults2022 from '../images/2022GovResults.png'
+import HouseResults from '../images/HouseResults.png'
+import MainPage from '../images/MainPage.png'
+import AlaskaResults from '../images/2022SenateResults.png'
 import '../css/ImageViewer.css';
 
 const ImageViewer = ({ setShowImage }) => {

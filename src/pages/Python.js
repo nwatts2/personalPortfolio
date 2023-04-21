@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
 import SudokuExplainer from '../videos/Sudoku Solver.mov';
-import PaintBackground from '../components/PaintBackground';
 import TicTacToeExplainer from '../videos/TicTacToe.mov';
 import Arrows from '../components/Arrows';
 import "../css/Python.css";
@@ -12,8 +11,8 @@ const Python = () => {
 
     return (
         <div className="column pageSection pythonContainer">
-                <div className="sectionTitleContainer">
-                    <div className="sectionTitle">
+                <div className="row sectionTitleContainer">
+                    <div className="column sectionTitle">
                         <hr style={{margin: "0px 0 10px 0"}}/>
                         <h1 className="tab" id="PYTHON">Python</h1>
                         <hr style={{margin: "10px 0 0 0"}}/>

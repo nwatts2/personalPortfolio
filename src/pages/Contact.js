@@ -5,8 +5,8 @@ import "../css/Contact.css";
 const Contact = () => {
     return (
         <div className="column contactContainer pageSection" style={{margin: "0px 0px 30px 0px"}}>
-            <div className="sectionTitleContainer">
-                <div className="sectionTitle">
+            <div className="row sectionTitleContainer">
+                <div className="column sectionTitle">
                     <hr style={{margin: "0px 0 10px 0"}}/>
                     <h1 className="tab" id="CONTACT">Contact</h1>
                     <hr style={{margin: "10px 0 0 0"}}/>
@@ -35,7 +35,7 @@ const Contact = () => {
                                 <hr />
                             </div>
                         
-                            <h3><a>{"Email"}</a></h3>
+                            <h3>{"Email"}</h3>
                         </div>
                         <p>nwatts2@uccs.edu</p>
                     </div>

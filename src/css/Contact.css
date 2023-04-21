@@ -119,6 +119,7 @@
 
 .contactBoxEntry h3 {
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 .contact .box1 { top: 7%; left: 3%; }

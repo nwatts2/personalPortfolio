@@ -9,8 +9,8 @@ const ReactJS = ({ setShowImage }) => {
 
     return (
         <div className='column reactJSContainer pageSection' id='react'>
-                <div className="sectionTitleContainer">
-                    <div className="sectionTitle">
+                <div className="row sectionTitleContainer">
+                    <div className="column sectionTitle">
                         <hr style={{margin: "0px 0 10px 0"}}/>
                         <h1 className="tab" id="REACT">React.js</h1>
                         <hr style={{margin: "10px 0 0px 0"}}/>

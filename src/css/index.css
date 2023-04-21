@@ -10,12 +10,6 @@
   src: url('../fonts/a-amne-sans-font/AmneSans-BWXVd.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: "Turpis";
-  src: url('../fonts/turpis-font/Turpis-GOgVm.ttf') format('truetype');
-  src: url('../fonts/turpis-font/TurpisItalic-JR0j7.ttf') format('truetype');
-}
-
 * {
   box-sizing: border-box;
 }
@@ -42,13 +36,10 @@ body {
 a {
   text-decoration: none;
   color: white;
-  width: auto;
 }
 
 .sectionTitleContainer {
   width: 90%;
-  display:flex;
-  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 }
@@ -56,14 +47,10 @@ a {
 .sectionTitle {
   width: 25%;
   min-width: fit-content;
-  display: flex;
-  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: #F15455;
-  border-radius: 10px;
   box-shadow: -5px 5px 3px 0px #141719;
-  margin: 0;
   z-index: 1;
 }
 

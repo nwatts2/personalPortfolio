@@ -1,23 +1,23 @@
-import "../css/About.css"
+import React from 'react';
 import NoahPhoto from '../images/Portfolio Photo.png';
 import CityBackground from '../components/CityBackground';
-import React from 'react'
+import "../css/About.css";
 
 const About = () => {
     return (
         <div className="column aboutContainer pageSection" id="about">
-            <div className="sectionTitleContainer">
-                <div className="sectionTitle">
+            <div className="row sectionTitleContainer">
+                <div className="column sectionTitle">
                     <hr style={{margin: "0px 0 10px 0"}}/>
                     <h1 className="tab" id="ABOUT">About</h1>
                     <hr style={{margin: "10px 0 0 0"}}/>
                 </div>
             </div>
             <div className="row about" id="about">
-                <div className="aboutLeft">
-                    <img src={NoahPhoto} />
+                <div className="column aboutLeft">
+                    <img src={NoahPhoto} alt="Noah Watts" />
                 </div>
-                <div className="aboutRight">
+                <div className="column aboutRight">
                     <h1 className="tab" id="ABOUT">Who's Noah?</h1>
                     <div className="column aboutBox">
                         <p>{"I’m Noah! I’m a hard working developer with a strong technical background. I have experience working with several popular modern languages and frameworks, such as JavaScript/React.js/Node.js, Swift/SwiftUI, and Python."}</p>

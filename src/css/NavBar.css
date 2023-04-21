@@ -44,7 +44,6 @@
   .navBarContainer h2 {
     font-size: 1.2rem;
     font-family: "Amne Sans";
-    width: auto;
     padding: 5px 10px 0px 10px;
     background-color: #232831;
     border-radius: 20px 10px 20px 10px;
@@ -59,7 +58,6 @@
     justify-content: space-evenly;
     align-items: center;
     width: 770px;
-    border-radius: 20px 20px 0px 0%;
     position: absolute;
     top: 10px;
     right: 0px;
@@ -68,13 +66,12 @@
   
   .navBar h3 {
     margin: 0;
-    padding: 10px;
     width: 125px;
     text-align: center;
     z-index: 5;
     font-family: "Courier";
     font-size: 1.3rem;
-    margin: 5px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     white-space: nowrap;
     position: absolute;
   }
@@ -124,7 +121,6 @@
   .mobileNavBarContainer h2 {
     font-size: 1.2rem;
     font-family: "Amne Sans";
-    width: auto;
     padding: 5px 10px 0px 10px;
     background-color: #232831;
     border-radius: 20px 10px 20px 10px;
@@ -185,7 +181,6 @@
     align-items: center;
     background: linear-gradient(to bottom, #232831FF 20%, #23283100 90%);
     padding: 10px 0px 0px 0px;
-    clip: rect(0px, calc(100vw - ((100vw - 1800px) / 2) - 12px), 100px, calc((100vw - 1800px) / 2));
   }
 
   @media screen and (max-width: 740px) {

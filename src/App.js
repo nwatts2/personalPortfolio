@@ -19,15 +19,8 @@ const App = () => {
 
     var sizer = {
         isMobile: screenWidth <= 740,
-        isTablet: (screenWidth <= 1200 && screenWidth > 740),
         width: screenWidth
     };
-
-    const color1 = "hsla(0,0%,100%,1)";
-    const color2 = "hsla(258.5,59.4%,59.4%,1)";
-    const color3 = "hsla(339.6,82.2%,51.6%,1)";
-    const color4 = "hsla(198.7,97.6%,48.4%,1)";
-    const color5 = "black";
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);

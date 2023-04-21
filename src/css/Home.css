@@ -1,6 +1,4 @@
 .home {
-    display:flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -11,8 +9,6 @@
 }
 
 .homeLeft {
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items:flex-start;
     padding: 0px 0px 0px 60px;
@@ -21,8 +17,6 @@
 }
 
 .homeRight {
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items:center;
     position: relative;

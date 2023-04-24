@@ -25,8 +25,8 @@
 
 .imageViewerDisplayContainer svg {
     width: 100%;
-    fill: #F15455;
-    transition: all .1s ease-in-out;
+    fill: #3EEAA8;
+    transition: all .2s ease-in-out;
 }
 
 .imageViewerDisplayContainer .prevImageButton:active svg, .imageViewerDisplayContainer .nextImageButton:active svg, .imageViewerDisplayContainer .prevImageButton:hover svg, .imageViewerDisplayContainer .nextImageButton:hover svg {
@@ -63,9 +63,6 @@
     margin: 0;
     padding: 0;
     position: relative;
-    outline: 3px solid #f15455;
-    border: 3px solid #d9d9d9;
-    border-radius: 20px;
     box-shadow: -5px 5px 3px 0px #141719;
     overflow: hidden;
 }
@@ -135,9 +132,8 @@
     width: 15%;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #232831;
-    border: 2px solid #30475D;
     box-shadow: -5px 5px 3px 0px #141719;
     transition: all .2s ease-in-out;
 }
@@ -153,10 +149,12 @@
 
 .imageSelector .selected {
     opacity: 1;
+    border: 2px solid #33EAC9;
 }
 
 .imageSelector .unselected {
     opacity: .5;
+    border: 2px solid transparent;
 }
 
 @media screen and (max-width: 740px) {

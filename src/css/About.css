@@ -4,6 +4,7 @@
     max-height: 900px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .aboutContainer svg {
@@ -13,6 +14,7 @@
 .about {
     width: 100%;
     height: 100%;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
@@ -25,14 +27,39 @@
     position: relative;
 }
 
-.aboutLeft img {
-    width: 80%;
-    transform: rotate(-7deg);
+.aboutLeft span {
+    color: #33EAC9;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+.profileImageContainer {
+    width: 85%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0px 0px 0px;
+    transform: rotate(-4deg);
     z-index: 1;
 }
 
+.profileImageContainer img {
+    width: 60%;
+    z-index: 1;
+}
+
+.profileImageContainer svg {
+    position: absolute;
+    top: -23.5%;
+    left: 50%;
+    width: 72%;
+    fill: #3EEAA8;
+    transform: translateX(-50%);
+    animation: growShrink 2s ease-in-out infinite;
+}
+
 .aboutRight h1 {
-    background: #68383D;
+    background: #30475D;
     margin: 0;
     padding: 10px 30px;
     border-radius: 10px;
@@ -56,8 +83,14 @@
     backdrop-filter: blur(2px);
 }
 
-.aboutBox span {
-    color: #30475D;
+.aboutBox .aboutEmphasis {
+    background-color: #3EEAA8;
+    border-radius: 10px 20px 10px 20px;
+    margin: 0;
+    padding: 0px 10px;
+    line-height: 1px;
+    text-shadow: 0px 0px 3px #232831;
+    white-space: nowrap;
 }
 
 .aboutBox p {
@@ -71,7 +104,8 @@
     position: absolute;
     top: 5%;
     left: -5%;
-    fill: #f15455;
+    fill: #33EAC9;
+    animation: float1 4s ease-in-out infinite;
 }
 
 .rectangle2 {
@@ -81,6 +115,7 @@
     top: 15%;
     left: 40%;
     fill: #141719;
+    animation: float2 4s 1s ease-in-out infinite;
 }
 
 .rectangle3 {
@@ -90,6 +125,7 @@
     top: 35%;
     left: 0%;
     fill: #232831;
+    animation: float3 4s 3s ease-in-out infinite;
 }
 
 @media screen and (max-width: 1400px) {
@@ -113,5 +149,29 @@
 
 @media screen and (max-height: 800px) {
     .aboutContainer { min-height: 100vh; }
+}
+
+@keyframes float1 {
+    0% {transform: translate(-0.5%, -1.5%)}
+    50% {transform: translate(0.5%, 1.5%)}
+    100% {transform: translate(-0.5%, -1.5%)}
+}
+
+@keyframes float2 {
+    0% {transform: translate(-1.5%, -1%)}
+    50% {transform: translate(1.5%, 1%)}
+    100% {transform: translate(-1.5%, -1%)}
+}
+
+@keyframes float3 {
+    0% {transform: translate(-0.5%, -2%)}
+    50% {transform: translate(1%, 2%)}
+    100% {transform: translate(-0.5%, -2%)}
+}
+
+@keyframes growShrink {
+    0% {transform: translateX(-50%) scale(1)}
+    50% {transform: translateX(-50%) scale(1.02)}
+    100% {transform: translateX(-50%) scale(1)}
 }
 

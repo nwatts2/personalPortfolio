@@ -16,6 +16,7 @@ const App = () => {
     const [page, setPage] = useState("HOME");
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [showImage, setShowImage] = useState(null);
+    const [showScrollPrompt, setShowScrollPrompt] = useState(true);
 
     var sizer = {
         isMobile: screenWidth <= 740,
@@ -29,6 +30,12 @@ const App = () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setPage(entry.target.id);
+
+                    if (entry.target.id !== 'HOME') {
+                        setShowScrollPrompt(false);
+                    } else if (!showScrollPrompt) {
+                        setShowScrollPrompt(true);
+                    }
                 }
             });
         });
@@ -54,26 +61,34 @@ const App = () => {
             <div className="pageBackground">
                 <BackgroundGraphic />
             </div>
-            <div className="column page">
-                {sizer.width >= 1150 &&
-                    <NavBar page={page} setPage={setPage} sizer={sizer} />
-                }
-                {sizer.width < 1150 &&
-                    <MobileNavBar setPage={setPage} sizer={sizer} />
-                }
-                <div className={sizer.width >= 1150 ? "navBarBackground" : "mobileNavBarBackground"} />
-                <Home />
-                <About />
-                <Swift sizer={sizer} />
-                <div className='reactPythonContent'>
-                    <div className='reactPythonWrapper'>
-                        <ReactJS setShowImage={setShowImage} />
-                        <Python />
+            <div className="column pageWrapper">
+                <div className="column page">
+                    {sizer.width >= 1150 &&
+                        <NavBar page={page} setPage={setPage} sizer={sizer} />
+                    }
+                    {sizer.width < 1150 &&
+                        <MobileNavBar setPage={setPage} sizer={sizer} />
+                    }
+                    <div className={sizer.width >= 1150 ? "navBarBackground" : "mobileNavBarBackground"} />
+                    <hr className="divider" id="home" style={{margin: "0px 0px 60px 0px"}} />
+                    <Home showScrollPrompt={showScrollPrompt} />
+                    <hr className="divider" id="about" style={{margin: '0'}} />
+                    <About />
+                    <hr className="divider" id="swift" />
+                    <Swift sizer={sizer} />
+                    <hr className="divider" id="react" />
+                    <div className='reactPythonContent'>
+                        <div className='reactPythonWrapper'>
+                            <ReactJS setShowImage={setShowImage} />
+                            <hr className="divider" id="python" />
+                            <Python />
+                        </div>
+                        <ReactPythonBackground />
                     </div>
-                    <ReactPythonBackground />
+                    <hr className="divider" id="contact" />
+                    <Contact />
+                    <Social sizer={sizer} />
                 </div>
-                <Contact />
-                <Social sizer={sizer} />
             </div>
             <div className='pageEnd' />
             {showImage !== null &&

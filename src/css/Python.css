@@ -46,7 +46,7 @@
 
 .python .sudokuText {
     position: absolute;
-    bottom: 110px;
+    bottom: 200px;
     right: 10%;
     width: 40%;
     justify-content: center;
@@ -117,7 +117,7 @@
     left: 2.5%;
     z-index: -1;
     animation: floatSmallUp 5s ease-in-out infinite;
-    fill: #F15455;
+    fill: #33EAC9;
 }
 
 .backBlock2 {

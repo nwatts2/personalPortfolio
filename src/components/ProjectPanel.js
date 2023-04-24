@@ -9,8 +9,6 @@ const ProjectPanel = ({ mode, numProjects, sizer }) => {
     const [activePanel, setActivePanel] = useState(0)
     const [panels, setPanels] = useState([])
 
-    const [panelAnimation, setPanelAnimation] = useState({animation: "none"});
-
     useEffect(() => {
         const tempPanels = []
 
@@ -30,38 +28,22 @@ const ProjectPanel = ({ mode, numProjects, sizer }) => {
                 setActivePanel(numProjects - 1);
             }
 
-            setPanelAnimation({
-                animation: "floatInRight .3s ease-out"
-            })
-
         } else if (method === "next") {
             if (activePanel < numProjects - 1) {
                 setActivePanel(activePanel + 1);
             } else {
                 setActivePanel(0);
             }
-
-            setPanelAnimation({
-                animation: "floatInLeft .3s ease-out"
-            })
         }
     }
 
     function handleNext () {
-        setPanelAnimation({
-            animation: "floatOutLeft .2s ease-out"
-        });
-
         setTimeout(() => {
             updatePanel("next")
         }, 200)
     }
 
     function handlePrev () {
-        setPanelAnimation({
-            animation: "floatOutRight .2s ease-out"
-        });
-
         setTimeout(() => {
             updatePanel("previous")
         }, 200)
@@ -75,13 +57,13 @@ const ProjectPanel = ({ mode, numProjects, sizer }) => {
                 </div>
                 { mode === "SWIFT" &&
                 <div className="row projectPanelDisplay">
-                    <div className={activePanel === 0 ? "panel activePanel" : "panel inactivePanel"} style={panelAnimation} >
+                    <div className={activePanel === 0 ? "panel activePanel" : "panel inactivePanel"} >
                         <IOS sizer={sizer} />
                     </div>
-                    <div className={activePanel === 1 ? "panel activePanel" : "panel inactivePanel"} style={panelAnimation} >
+                    <div className={activePanel === 1 ? "panel activePanel" : "panel inactivePanel"} >
                         <ColorPicker sizer={sizer} />
                     </div>
-                    <div className={activePanel === 2 ? "panel activePanel" : "panel inactivePanel"} style={panelAnimation} >
+                    <div className={activePanel === 2 ? "panel activePanel" : "panel inactivePanel"} >
                         <CoverLetterGenerator sizer={sizer} />
                     </div>
                 </div>

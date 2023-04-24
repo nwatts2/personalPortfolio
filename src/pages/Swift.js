@@ -8,7 +8,7 @@ import "../css/Swift.css";
 
 const Swift = ({ sizer }) => {
     return (
-        <div className="column swiftContainer pageSection" id="swift">
+        <div className="column swiftContainer pageSection">
             <div className="row sectionTitleContainer">
                 <div className="column sectionTitle">
                     <hr style={{margin: "0px 0 10px 0"}}/>

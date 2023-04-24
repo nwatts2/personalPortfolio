@@ -1,0 +1,51 @@
+.macOS {
+    width: 100%;
+    height: 100%;
+}
+
+.macOSRight {
+    width: 50%;
+    height: 100%;
+    padding: 0px 0px 0px 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.macOSLeft {
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.macOS h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    padding: 5px 20px;
+    margin: 20px 0px 20px 40px;
+    background: linear-gradient(to bottom, #30475DFF, #30475D00);
+    text-shadow: 0px 0px 5px black;
+    align-self: flex-end;
+}
+
+.macOS p {
+    text-shadow: 0px 0px 5px black;
+}
+
+.macOS video {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: -5px 5px 3px 0px #141719;
+    z-index: 1;
+}
+
+@media screen and (max-width: 740px) {
+    .macOS { flex-flow: column nowrap; justify-content: center; align-items: center; }
+    .macOS h2 { font-size: 1.7rem; align-self: flex-start; margin: 20px 0px 20px 10px; }
+    .macOS p { text-align: center; }
+    .macOS video { width: 90%; height: auto; margin: 20px 0px; }
+}

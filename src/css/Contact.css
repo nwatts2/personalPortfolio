@@ -34,6 +34,7 @@
 
 .contactBox {
     background-color: #14171977;
+    border: 3px solid transparent;
     border-radius: 10px;
     margin: 0;
     padding: 10px 30px;

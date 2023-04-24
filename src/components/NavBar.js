@@ -54,7 +54,7 @@ const NavBar = ({ page, setPage, sizer }) => {
                 <h3 onClick={() => {setPage("CONTACT")}} style={{top: 0, left: `625px`}} ><a href="#contact">Contact</a></h3>
             </div>
             <div className="navSVG">
-                <svg width={sizer.width} height="100%" viewBox="0 0 100 100" overflow="visible" preserveAspectRatio="none" style={{strokeLinejoin: "round", stroke: '#d9d9d9', fill: '#F15455'}}>
+                <svg width={sizer.width} height="100%" viewBox="0 0 100 100" overflow="visible" preserveAspectRatio="none" style={{strokeLinejoin: "round", stroke: '#33EAC9', fill: '#232831'}}>
                     <path d={pathShape}
                     style={{strokeWidth: 3}}
                     vectorEffect="non-scaling-stroke"

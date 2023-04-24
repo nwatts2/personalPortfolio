@@ -49,7 +49,7 @@ a {
   min-width: fit-content;
   justify-content: space-between;
   align-items: center;
-  background-color: #F15455;
+  background-color: #3EEAA8;
   box-shadow: -5px 5px 3px 0px #141719;
   z-index: 1;
 }
@@ -103,25 +103,34 @@ a {
   z-index: 1;
 }
 
+.pageWrapper {
+  justify-content: center;
+  align-items: center;
+  min-width: 1800px;
+  width: 90%;
+  background: linear-gradient(to bottom, #232831 10%, #30475D 50%, #232831 90%);
+  box-shadow: 0px 0px 5px 5px #141719;
+  overflow: hidden;
+  z-index: 0;
+}
+
 .page {
   max-width: 1800px;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(to bottom, #232831 10%, #30475D 50%, #232831 90%);
-  box-shadow: 0px 0px 5px 10px #141719;
-  border-left: 5px solid #d9d9d9;
-  border-right: 5px solid #d9d9d9;
-  outline: 5px solid #f15455;
   padding: 0px 20px;
-  z-index: 0;
-  overflow: hidden;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid transparent;
+  margin: 0px 0px 100px 0px;
 }
 
 .pageSection {
   justify-content: flex-start;
   align-items: center;
-  margin: 0px 0px 100px 0px;
 }
 
 .pageEnd {
@@ -131,13 +140,13 @@ a {
   height: 20px;
   width: 100%;
   background-color: #d9d9d9;
-  border-top: 10px solid #f15455;
+  border-top: 10px solid #33EAC9;
   z-index: 1;
   margin: 0;
 }
 
 @media screen and (max-width: 740px) {
-  .pageSection { margin: 0px 0px 50px 0px; }
+  .divider { margin: 0px 0px 50px 0px; }
   .page { padding: 0; }
   .sectionTitleContainer { justify-content: center; }
   .sectionTitle h1 { font-size: 2.5rem; }

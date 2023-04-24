@@ -12,7 +12,7 @@ const Contact = () => {
                     <hr style={{margin: "10px 0 0 0"}}/>
                 </div>
             </div>
-            <div className="column contact" id="contact">
+            <div className="column contact">
             <div className="column contactBackground">
                 <ScaleBackground />
                 <div className="column contactBox">

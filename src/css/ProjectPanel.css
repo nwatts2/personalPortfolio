@@ -25,7 +25,7 @@
 
 .projectPanelDisplayContainer svg {
     width: 100%;
-    fill: #F15455;
+    fill: #3EEAA8;
     transition: all .2s ease-in-out;
 }
 
@@ -107,7 +107,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    transition: all .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
 }
 
 .panel p {
@@ -116,21 +116,3 @@
 
 .activePanel { opacity: 1; width: 100%;}
 .inactivePanel { opacity: 0; width: 100%;}
-
-
-
-@keyframes floatOutRight { 
-    100% { transform: translateX(100%) } 
-}
-@keyframes floatOutLeft { 
-    100% { transform: translateX(-100%) } 
-}
-
-@keyframes floatInRight {
-    0% { transform: translateX(-100%) }
-    100% { transform: translateX(0%) }
-}
-@keyframes floatInLeft { 
-    0% { transform: translateX(100%) } 
-    100% { transform: translateX(0%) } 
-}

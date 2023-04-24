@@ -1,10 +1,10 @@
 .projectDescription {
-    background-color: #68383D;
+    background-color: #232831;
     padding: 10px 20px;
     width: 90%;
     margin: 20px 0px;
     border-radius: 30px;
-    border: 3px solid #F15455;
+    border: 3px solid #33EAC9;
     box-shadow: -5px 5px 3px 0px #141719;
     position: relative;
     z-index: 1;
@@ -15,21 +15,22 @@
     background-color: #232831;
     padding: 3px 5px;
     border-radius: 5px;
-    border: 2px solid #30475D;
-    text-shadow: 0px 0px 5px black;
-    transition: all .2s ease-in-out;
+    border: 2px solid #33EAC9;
+    text-shadow: 0px 0px 3px #232831;
+    transition: all .1s ease-in-out;
 }
 
 .projectDescription h3 { top: -33px; }
-.projectDescription h4 { bottom: -36px; right: 30px; border-radius: 30px; }
+.projectDescription h4 { bottom: -36px; right: 30px; border-radius: 30px;}
 
 .projectDescription h4:hover {
-    transform: scale(1.05);
+    background-color: #33EAC9;
+    border-radius: 10px;
 }
 
 .projectDescription span {
     margin: 0;
-    color: #f15455;
+    color: #3EEAA8;
 }
 
 @media screen and (max-width: 1400px) {

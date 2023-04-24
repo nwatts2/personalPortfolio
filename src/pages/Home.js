@@ -3,7 +3,7 @@ import Desk from '../images/Desk.png';
 import PaintBackground from '../components/PaintBackground';
 import "../css/Home.css";
 
-const Home = ({ showScrollPrompt }) => {
+const Home = ({ page }) => {
     return (
         <div className="row home pageSection">
             <div className="column homeLeft">
@@ -14,7 +14,7 @@ const Home = ({ showScrollPrompt }) => {
                 <div className="purposeStatement">
                     <p>{"I’m passionate about improving the user experience; together, we can create powerful tools for iOS, MacOS, and the web."}</p>
                 </div>
-                <div className="row scrollPrompt" style={showScrollPrompt ? {opacity: 1} : {opacity: 0}}>
+                <div className="row scrollPrompt" style={page === "HOME" ? {opacity: 1} : {opacity: 0}}>
                     <svg viewBox="0 0 24 24" ><line id="primary" x1="12" y1="3" x2="12" y2="21" style={{strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2}}></line><polyline id="primary-2" data-name="primary" points="9 18 12 21 15 18" style={{strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2}}></polyline></svg>
                     <p>Scroll to learn more</p>
                     <svg viewBox="0 0 24 24" ><line id="primary" x1="12" y1="3" x2="12" y2="21" style={{strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2}}></line><polyline id="primary-2" data-name="primary" points="9 18 12 21 15 18" style={{strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2}}></polyline></svg>

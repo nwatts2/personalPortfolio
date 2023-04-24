@@ -20,7 +20,7 @@ const Python = () => {
                 </div>
                 <div className="row python">
                     <div className="row ticTacToeText">
-                        <ProjectDescription title="TicTacToe" text={ticTacToeText} />
+                        <ProjectDescription title="TicTacToe" text={ticTacToeText} link="ticTacToe" />
                     </div>
                     <div className="row ticTacToeVideo">
                         <video autoPlay loop muted >
@@ -34,7 +34,7 @@ const Python = () => {
                         </svg>
                     </div>
                     <div className="row sudokuText">
-                        <ProjectDescription title="Sudoku Solver" text={sudokuText} />
+                        <ProjectDescription title="Sudoku Solver" text={sudokuText} link="sudokuSolver" />
                     </div>
                     <div className="row sudokuVideo">
                         <video autoPlay loop muted >

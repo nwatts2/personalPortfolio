@@ -16,7 +16,6 @@ const App = () => {
     const [page, setPage] = useState("HOME");
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [showImage, setShowImage] = useState(null);
-    const [showScrollPrompt, setShowScrollPrompt] = useState(true);
 
     var sizer = {
         isMobile: screenWidth <= 740,
@@ -30,12 +29,6 @@ const App = () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setPage(entry.target.id);
-
-                    if (entry.target.id !== 'HOME') {
-                        setShowScrollPrompt(false);
-                    } else if (!showScrollPrompt) {
-                        setShowScrollPrompt(true);
-                    }
                 }
             });
         });
@@ -71,7 +64,7 @@ const App = () => {
                     }
                     <div className={sizer.width >= 1150 ? "navBarBackground" : "mobileNavBarBackground"} />
                     <hr className="divider" id="home" style={{margin: "0px 0px 60px 0px"}} />
-                    <Home showScrollPrompt={showScrollPrompt} />
+                    <Home page={page} />
                     <hr className="divider" id="about" style={{margin: '0'}} />
                     <About />
                     <hr className="divider" id="swift" />

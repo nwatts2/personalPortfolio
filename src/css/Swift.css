@@ -1,17 +1,13 @@
 .swiftContainer {
     width: 100%;
-    height: 800px;
     position: relative;
 }
 
 .swift {
-    display:flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     margin: 20px 0px 0px 0px;
     width: 95%;
-    height: 75%;
 }
 
 .swiftContainer .paintBackground {

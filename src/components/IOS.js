@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
-import ToDoExplainer from '../videos/ToDo.mov';
-import CalculatorExplainer from '../videos/Calculator.mov';
+import ToDoExplainer from '../videos/ToDo.mp4';
+import CalculatorExplainer from '../videos/Calculator.mp4';
 import '../css/IOS.css';
 
 const IOS = ({ sizer }) => {

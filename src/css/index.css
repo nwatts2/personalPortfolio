@@ -1,13 +1,12 @@
 @font-face {
   font-family: "3D Isometric";
-  src: url('../fonts/3d-isometric-font/3DIsometric-YzLLy.ttf') format('truetype');
-  /*src: url('../fonts/3d-isometric-font/3DIsometricBlack-BWPPG.ttf') format('truetype');
-  src: url('../fonts/3d-isometric-font/3DIsometricBold-8MYYZ.ttf') format('truetype');*/
+  src: url('../fonts/3DIsometricBold-8MYYZ.ttf') format('truetype');
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "Amne Sans";
-  src: url('../fonts/a-amne-sans-font/AmneSans-BWXVd.ttf') format('truetype');
+  src: url('../fonts/AmneSans-BWXVd.ttf') format('truetype');
 }
 
 * {
@@ -20,7 +19,6 @@ body {
   color: white;
   font-family: "Courier";
   font-size: 1rem;
-  overflow-x: hidden;
 }
 
 .row {
@@ -36,40 +34,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-}
-
-.sectionTitleContainer {
-  width: 90%;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.sectionTitle {
-  width: 25%;
-  min-width: fit-content;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3EEAA8;
-  box-shadow: -5px 5px 3px 0px #141719;
-  z-index: 1;
-}
-
-.sectionTitle h1 {
-  font-family: "3D Isometric";
-  font-size: 4rem;
-  text-align: center;
-  width: 100%;
-  border-left: 10px solid white;
-  border-right: 10px solid white;
-  padding: 10px 20px;
-  margin: 0;
-  background-color: #232831;
-}
-
-.sectionTitle hr {
-  width: 100%;
-  margin: 0px;
-  border: 3px solid white;
 }
 
 .pageContainer {
@@ -106,12 +70,12 @@ a {
 .pageWrapper {
   justify-content: center;
   align-items: center;
-  min-width: 1800px;
-  width: 90%;
+  width: 100%;
   background: linear-gradient(to bottom, #232831 10%, #30475D 50%, #232831 90%);
   box-shadow: 0px 0px 5px 5px #141719;
   overflow: hidden;
   z-index: 0;
+  position: relative;
 }
 
 .page {
@@ -119,6 +83,7 @@ a {
   width: 100%;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   padding: 0px 20px;
 }
 
@@ -140,7 +105,7 @@ a {
   height: 20px;
   width: 100%;
   background-color: #d9d9d9;
-  border-top: 10px solid #33EAC9;
+  border-top: 10px solid #3EEAA8;
   z-index: 1;
   margin: 0;
 }
@@ -150,4 +115,8 @@ a {
   .page { padding: 0; }
   .sectionTitleContainer { justify-content: center; }
   .sectionTitle h1 { font-size: 2.5rem; }
+}
+
+@media screen and (min-width: 1800px) {
+  .pageWrapper { width: 90%; min-width: 1800px }
 }

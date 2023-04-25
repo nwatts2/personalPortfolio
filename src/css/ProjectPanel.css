@@ -1,19 +1,15 @@
 .projectPanel {
     width: 100%;
-    height: 100%;
     justify-content: center;
     align-items: center;
     margin: 0;
-    position: relative;
     z-index: 0;
 }
 
 .projectPanelDisplayContainer {
     border: 5px solid #d9d9d9;
     width: 100%;
-    height: 95%;
     padding: 0px;
-    position: relative;
     overflow: hidden;
     background: #141719B0;
     backdrop-filter: blur(2px);
@@ -34,27 +30,14 @@
 }
 
 .projectPanelDisplayContainer .prevPanelButton, .projectPanelDisplayContainer .nextPanelButton {
-    position: relative;
-    width: 5%;
-    height: 100%;
+    width: 70px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: center;
     transition: all .2s ease-in-out;
     z-index: 2;
     cursor: pointer;
-}
-
-.projectPanelDisplayContainer .prevPanelButton {
-    background: linear-gradient(to right, #151820FF, #15182000); 
-    justify-content: flex-start;
-    transition: all .2s ease-in-out;
-}
-
-.projectPanelDisplayContainer .nextPanelButton {
-    background: linear-gradient(to left, #151820FF, #15182000);
-    justify-content: flex-end;
-    transition: all .2s ease-in-out;
 }
 
 .projectPanelDisplayContainer .prevPanelButton:hover svg {
@@ -67,18 +50,15 @@
 
 .projectPanelDisplay {
     width: 95%;
-    height: 95%;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 0;
-    position: relative;
 }
 
 .projectPanelSelector {
     width: 50%;
     justify-content: center;
     align-items: center;
-    position: relative;
     z-index: 1;
     background: #141719;
     border-radius: 0px 0px 20px 20px;
@@ -101,12 +81,10 @@
 }
 
 .panel {
-    height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
+    grid-row-start: 1;
+    grid-column-start: 1;
     justify-content: center;
-    align-items: center;
-    position: absolute;
+    align-items: flex-start;
     transition: opacity .2s ease-in-out;
 }
 

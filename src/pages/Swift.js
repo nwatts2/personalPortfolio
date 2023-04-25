@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from '../components/SectionHeader';
 import ProjectPanel from '../components/ProjectPanel';
 import PaintBackground from '../components/PaintBackground';
 import IOS from '../components/IOS';
@@ -7,22 +8,18 @@ import CoverLetterGenerator from '../components/CoverLetterGenerator';
 import "../css/Swift.css";
 
 const Swift = ({ sizer }) => {
+    const swiftDescription = "Swift is a programming language developed by Apple and the open-source community. It's used to build applications for iPhones, MacBooks, Apple Watches, and Apple TV.";
+
     return (
         <div className="column swiftContainer pageSection">
-            <div className="row sectionTitleContainer">
-                <div className="column sectionTitle">
-                    <hr style={{margin: "0px 0 10px 0"}}/>
-                    <h1 className="tab" id="SWIFT">Swift</h1>
-                    <hr style={{margin: "10px 0 0px 0"}}/>
-                </div>
-            </div>
+            <SectionHeader title="Swift" description={swiftDescription} identifier="SWIFT" />
             {!sizer.isMobile &&
-                <div className="swift">
+                <div className="row swift">
                         <ProjectPanel mode={"SWIFT"} numProjects={3} sizer={sizer} />
                 </div>
             }
             {sizer.isMobile &&
-                <div className="swift">
+                <div className="row swift">
                     <IOS sizer={sizer} />
                     <ColorPicker sizer={sizer} />
                     <CoverLetterGenerator sizer={sizer} />

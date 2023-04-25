@@ -1,15 +1,15 @@
 .navBarBackground {
     position: fixed;
     z-index: 9;
-    width: calc(100% + 10px);
+    width: 100%;
     height: 60px;
     top: 5px;
-    left: 5px;
+    left: 0px;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #232831FF 50%, #23283100 90%);
     padding: 10px 0px 0px 0px;
-    clip: rect(0px, calc(100vw - ((100vw - 1800px) / 2) - 12px), 100px, calc((100vw - 1800px) / 2));
+    background-clip: padding-box;
   }
   
   .navBarContainer {
@@ -25,14 +25,15 @@
   
   .navBarContainer h1 {
     font-size: auto;
-    font-family: "3D Isometric";
+    font-family: "3D Isometric", sans-serif;
+    font-weight: bold;
     text-align: center;
     width: 300px;
     margin: 6px 0px 0px 0px;
     padding: 5px 30px;
     outline: 3px solid #33EAC9;
     outline-offset: -5px;
-    border-radius: 20px 10px 20px 10px;
+    border-radius: 10px 20px 10px 20px;
     background-color: transparent;
     white-space: nowrap;
     position: absolute;
@@ -43,7 +44,7 @@
   
   .navBarContainer h2 {
     font-size: 1.2rem;
-    font-family: "Amne Sans";
+    font-family: "Amne Sans", sans-serif;
     padding: 5px 10px 0px 10px;
     background-color: #232831;
     border-radius: 20px 10px 20px 10px;
@@ -107,9 +108,9 @@
     width: 250px;
     margin: 3px 0px 0px 0px;
     padding: 5px 10px;
-    outline: 2px solid white;
+    outline: 2px solid #33EAC9;
     outline-offset: -5px;
-    border-radius: 20px 10px 20px 10px;
+    border-radius: 10px 20px 10px 20px;
     background-color: #232831;
     white-space: nowrap;
     position: absolute;
@@ -146,7 +147,7 @@
   }
 
   .mobileNavBarContainer .menuButton svg {
-    fill: #30475D;
+    fill: #33EAC9;
   }
 
   .mobileNavBarContainer .mobileMenu {
@@ -185,6 +186,14 @@
 
   @media screen and (max-width: 740px) {
     .mobileNavBarContainer .mobileMenu { top: 60px; right: 5px; }
+  }
+
+  @media screen and (min-width: 1800px) {
+    .navBarBackground { width: 90%; min-width: 1800px; left: calc((100% - 1800px) / 2) }
+  }
+
+  @media screen and (min-width: 2000px) {
+    .navBarBackground { left: 5% }
   }
 
   @keyframes openMenu {

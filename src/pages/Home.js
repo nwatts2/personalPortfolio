@@ -12,7 +12,7 @@ const Home = ({ page }) => {
                 </div>
                 <h1>A <span className='purposeEmphasis'>Software Developer</span> {"with a passion for"} <span className='purposeEmphasis'>bringing ideas to life.</span></h1>
                 <div className="purposeStatement">
-                    <p>{"I’m passionate about improving the user experience; together, we can create powerful tools for iOS, MacOS, and the web."}</p>
+                    <p>{"I’m dedicated to improving the user experience; together, we can create powerful tools for iOS, MacOS, and the web."}</p>
                 </div>
                 <div className="row scrollPrompt" style={page === "HOME" ? {opacity: 1} : {opacity: 0}}>
                     <svg viewBox="0 0 24 24" ><line id="primary" x1="12" y1="3" x2="12" y2="21" style={{strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2}}></line><polyline id="primary-2" data-name="primary" points="9 18 12 21 15 18" style={{strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2}}></polyline></svg>

@@ -55,6 +55,7 @@ const App = () => {
                 <BackgroundGraphic />
             </div>
             <div className="column pageWrapper">
+                <div className={sizer.width >= 1150 ? "navBarBackground" : "mobileNavBarBackground"} />
                 <div className="column page">
                     {sizer.width >= 1150 &&
                         <NavBar page={page} setPage={setPage} sizer={sizer} />
@@ -62,7 +63,6 @@ const App = () => {
                     {sizer.width < 1150 &&
                         <MobileNavBar setPage={setPage} sizer={sizer} />
                     }
-                    <div className={sizer.width >= 1150 ? "navBarBackground" : "mobileNavBarBackground"} />
                     <hr className="divider" id="home" style={{margin: "0px 0px 60px 0px"}} />
                     <Home page={page} />
                     <hr className="divider" id="about" style={{margin: '0'}} />

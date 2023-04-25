@@ -57,13 +57,13 @@ const ProjectPanel = ({ mode, numProjects, sizer }) => {
                 </div>
                 { mode === "SWIFT" &&
                 <div className="row projectPanelDisplay">
-                    <div className={activePanel === 0 ? "panel activePanel" : "panel inactivePanel"} >
+                    <div className={activePanel === 0 ? "row panel activePanel" : "row panel inactivePanel"} >
                         <IOS sizer={sizer} />
                     </div>
-                    <div className={activePanel === 1 ? "panel activePanel" : "panel inactivePanel"} >
+                    <div className={activePanel === 1 ? "row panel activePanel" : "row panel inactivePanel"} >
                         <ColorPicker sizer={sizer} />
                     </div>
-                    <div className={activePanel === 2 ? "panel activePanel" : "panel inactivePanel"} >
+                    <div className={activePanel === 2 ? "row panel activePanel" : "row panel inactivePanel"} >
                         <CoverLetterGenerator sizer={sizer} />
                     </div>
                 </div>

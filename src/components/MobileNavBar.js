@@ -28,7 +28,7 @@ const MobileNavBar = ({ setPage, sizer }) => {
         <div className="row mobileNavBarContainer">
             <h1>Noah's Lab</h1>
             <h2>By Noah Watts</h2>
-            <svg width={sizer.width} height="100%" viewBox="0 0 100 100" overflow="visible" preserveAspectRatio="none" style={{strokeLinejoin: "round", stroke: '#d9d9d9', fill: '#F15455'}}>
+            <svg width={sizer.width} height="100%" viewBox="0 0 100 100" overflow="visible" preserveAspectRatio="none" style={{strokeLinejoin: "round", stroke: '#33EAC9', fill: '#232831'}}>
                 <path d={`M0,98 h${245 / sizer.width * 100} q${15 / sizer.width * 100},0 ${15 / sizer.width * 100},-25 v-25 q0,-25 ${15 / sizer.width * 100},-25 h${(sizer.width - 275) / sizer.width * 100} h1 v-25 h-102 v100 z`}
                 style={{strokeWidth: 3}}
                 vectorEffect="non-scaling-stroke"

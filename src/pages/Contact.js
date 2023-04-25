@@ -1,17 +1,12 @@
 import React from 'react';
+import SectionHeader from '../components/SectionHeader';
 import ScaleBackground from '../components/ScaleBackground';
 import "../css/Contact.css";
 
 const Contact = () => {
     return (
         <div className="column contactContainer pageSection" style={{margin: "0px 0px 30px 0px"}}>
-            <div className="row sectionTitleContainer">
-                <div className="column sectionTitle">
-                    <hr style={{margin: "0px 0 10px 0"}}/>
-                    <h1 className="tab" id="CONTACT">Contact</h1>
-                    <hr style={{margin: "10px 0 0 0"}}/>
-                </div>
-            </div>
+            <SectionHeader title="Contact" identifier="CONTACT" />
             <div className="column contact">
             <div className="column contactBackground">
                 <ScaleBackground />

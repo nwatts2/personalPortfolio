@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../components/ProjectDescription';
-import ColorPickerExplainer from '../videos/Color Picker.mov';
+import ColorPickerExplainer from '../videos/Color Picker.mp4';
 import '../css/MacOS.css';
 
 const ColorPicker = ({ sizer }) => {

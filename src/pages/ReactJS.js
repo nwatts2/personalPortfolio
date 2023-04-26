@@ -13,10 +13,10 @@ const ReactJS = ({ setShowImage }) => {
         <div className='column reactJSContainer pageSection'>
                 <SectionHeader title={"React.js"} description={reactDescription} identifier="REACT" />
                 <div className="row react">
-                    <div className="reactLeft">
+                    <div className="column reactLeft">
                         <ImageViewer setShowImage={setShowImage} />
                     </div>
-                    <div className="reactRight">
+                    <div className="column reactRight">
                         <ElectionBanner />
                         <ProjectDescription title="Noah's Election Machine" text={electionText} link="noahs-election-machine" />
                     </div>

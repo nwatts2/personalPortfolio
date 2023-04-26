@@ -23,7 +23,7 @@
 }
 
 .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton {
-    width: 15%;
+    width: 150px;
     cursor: pointer;
     transition: all .2s ease-in-out;
     z-index: 1;
@@ -103,7 +103,6 @@
 
 .imageSelector .imageContainer {
     overflow: hidden;
-    height: 100px;
     width: 15%;
     justify-content: center;
     align-items: center;
@@ -119,7 +118,7 @@
 }
 
 .imageSelector .imageContainer img {
-    height: 100%;
+    width: 100%;
 }
 
 .imageSelector .selected {
@@ -133,9 +132,9 @@
 }
 
 @media screen and (max-width: 740px) {
-    .imageViewer { height: auto }
     .imageViewerDisplayContainer { width: 100% }
-    .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton { visibility: hidden; }
+    .imageViewerDisplayContainer .prevImageButton, .imageViewerDisplayContainer .nextImageButton { visibility: hidden; width: 0px; }
+    .imageViewerDisplay { max-width: 100%; }
     .imageSelector { width: 95%; flex-flow: row wrap; }
     .imageSelector .imageContainer { width: 45%; margin: 10px 0px }
 }

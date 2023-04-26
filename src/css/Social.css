@@ -31,6 +31,7 @@
 .social svg {
     fill: #d9d9d9;
     width: 80%;
+    transition: all .2s ease-in-out;
 }
 
 .social .expandButton:hover {
@@ -50,3 +51,7 @@
 .social svg:hover .electionLogoLetters { fill: #d9d9d9; transition: all .2s ease-in-out }
 .social svg:hover .electionLogoRed { fill: #fa1a54; transition: all .2s ease-in-out }
 .social svg:hover .electionLogoBlue { fill: #3146ff; transition: all .2s ease-in-out }
+
+@media screen and (max-width: 740px) {
+    .social { width: 40px; height: 160px; }
+}

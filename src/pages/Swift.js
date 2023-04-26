@@ -13,16 +13,16 @@ const Swift = ({ sizer }) => {
     return (
         <div className="column swiftContainer pageSection">
             <SectionHeader title="Swift" description={swiftDescription} identifier="SWIFT" />
-            {!sizer.isMobile &&
+            {!sizer.isTablet &&
                 <div className="row swift">
                         <ProjectPanel mode={"SWIFT"} numProjects={3} sizer={sizer} />
                 </div>
             }
-            {sizer.isMobile &&
+            {sizer.isTablet &&
                 <div className="row swift">
-                    <IOS sizer={sizer} />
                     <ColorPicker sizer={sizer} />
                     <CoverLetterGenerator sizer={sizer} />
+                    <IOS sizer={sizer} />
                 </div>
             }
             <PaintBackground />

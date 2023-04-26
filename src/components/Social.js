@@ -3,14 +3,14 @@ import '../css/Social.css';
 
 const Social = ({ sizer }) => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [menuStyle, setMenuStyle] = useState({maxHeight: '55px'});
+    const [menuStyle, setMenuStyle] = useState({maxHeight: sizer.isMobile ? "40px" : '55px'});
     const [iconStyle, setIconStyle] = useState({opacity: 0});
     const strokeWidth = 6;
 
     function handleMenuClick () {
         if (menuOpen) {
             setMenuStyle({
-                maxHeight: "55px"
+                maxHeight: sizer.isMobile ? "40px" : '55px'
             });
 
             setIconStyle({
@@ -23,7 +23,7 @@ const Social = ({ sizer }) => {
 
         } else {
             setMenuStyle({
-                maxHeight: '210px'
+                maxHeight: sizer.isMobile ? "160px" : '210px'
             });
 
             setIconStyle({

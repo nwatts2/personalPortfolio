@@ -12,7 +12,7 @@ const IOS = ({ sizer }) => {
         return (
             <div className='row ios' >
                         <h2>iOS Projects</h2>
-                        <p>{"My first Swift projects allowed me to get a feel for the language and play around with SwiftUI for the first time. Overall, they helped me to build a foundational understanding of Swift that awarded me the ability to create more complex programs with it."}</p>
+                        <p style={{width: '90%'}}>{"These iOS projects were my first projects with Swift, and they allowed me to get a feel for the language and play around with SwiftUI for the first time. Overall, they helped me to build a foundational understanding of Swift that awarded me the ability to create more complex programs with it."}</p>
                         <ProjectDescription title="ToDo App" text={todoText} link={"ToDo_Notes_iOS_16"} />
                         <video autoPlay loop muted>
                             <source src={ToDoExplainer} type="video/mp4" />
@@ -26,20 +26,19 @@ const IOS = ({ sizer }) => {
     } else {
         return (
             <div className='row ios' >
-                <div className='column iosLeft'>
-                    <h2>iOS Projects</h2>
-                    <p>{"My first Swift projects allowed me to get a feel for the language and play around with SwiftUI for the first time. Overall, they helped me to build a foundational understanding of Swift that awarded me the ability to create more complex programs with it."}</p>
-                    <ProjectDescription title="ToDo App" text={todoText} link={"ToDo_Notes_iOS_16"} />
-                    <ProjectDescription title="Calculator App" text={calculatorText} link={"Calculator"} />
-                </div>
-                
-                <div className='row iosRight'>
+                <div className='row iosLeft'>
                     <video autoPlay loop muted>
                         <source src={ToDoExplainer} type="video/mp4" />
                     </video>
                     <video autoPlay loop muted>
                         <source src={CalculatorExplainer} type="video/mp4" />
                     </video>
+                </div>
+                <div className='column iosRight'>
+                    <h2>iOS Projects</h2>
+                    <p style={{textAlign: sizer.isTablet ? "left" : "right"}}>{"These iOS projects were my first projects with Swift, and they allowed me to get a feel for the language and play around with SwiftUI for the first time. Overall, they helped me to build a foundational understanding of Swift that awarded me the ability to create more complex programs with it."}</p>
+                    <ProjectDescription title="ToDo App" text={todoText} link={"ToDo_Notes_iOS_16"} />
+                    <ProjectDescription title="Calculator App" text={calculatorText} link={"Calculator"} />
                 </div>
             </div>
         )

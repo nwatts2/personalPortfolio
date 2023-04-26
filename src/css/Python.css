@@ -56,7 +56,7 @@
 
 .python .sudoku {
     width: 100%;
-    margin: -20% 0 50px 0;
+    margin: -250px 0 50px 0;
     justify-content: center;
     align-items: center;
 }
@@ -82,7 +82,7 @@
     margin: 0 -40px 0 0;
     align-self: flex-end;
     filter: drop-shadow(5px -5px 3px #141719);
-    fill: #d9d9d9;
+    fill: white;
     animation: topArrowRotate 2s ease-in-out infinite;
 }
 
@@ -91,7 +91,7 @@
     align-self: flex-start;
     margin: 0 0 0 -70px;
     filter: drop-shadow(5px 5px 3px #141719);
-    fill: #d9d9d9;
+    fill: white;
     animation: bottomArrowRotate 2s 0.5s ease-in-out infinite;
 }
 
@@ -139,19 +139,33 @@
     fill: #d9d9d9;
 }
 
-@media screen and (max-width: 740px) {
-    .pythonContainer { height: auto; max-height: none; }
-    .python { flex-flow: column nowrap; }
-    .python .ticTacToeText { position: relative; width: 100%; left: auto; top: auto;}
-    .python .ticTacToeVideo { position: relative; height: 450px; top: auto; right: auto; overflow: hidden; }
-    .python .sudokuText { position: relative; width: 90%; bottom: auto; right: auto; }
-    .python .sudokuVideo { position: relative; height: 450px; overflow: hidden; bottom: auto; left: auto; }
-    .pythonContainer .arrows { visibility: hidden }
+@media screen and (max-width: 1700px) {
+    .python .sudoku { margin: -80px 0px 50px 0px }
 }
 
-@media screen and (min-width: 1800px) {
-    .pythonContainer {height: 1300px}
+@media screen and (max-width: 1100px) {
+    .python .sudoku { margin: -50px 0 50px 0; }
+    .python .ticTacToeText, .python .sudokuText { width: 50%; margin: 20px 0 0 0; }
+    .python .ticTacToeVideo, .python .sudokuVideo { width: 40%; margin: 0; }
+    .pythonContainer .arrow1 { margin: 0 30px 0 0; }
+    .pythonContainer .arrow2 { margin: 0 0 0 30px; }
 }
+
+@media screen and (max-width: 900px) {
+    .pythonContainer .arrow1, .pythonContainer .arrow2 { visibility: hidden; }
+}
+
+@media screen and (max-width: 740px) {
+    .python .ticTacToe { flex-flow: column nowrap; justify-content: center; align-items: center; }
+    .python .sudoku { flex-flow: column-reverse nowrap; justify-content: center; align-items: center; }
+    .python .ticTacToeText { width: 100%; justify-content: center; align-items: center; }
+    .python .sudokuText { width: 100%;  justify-content: center; align-items: center; }
+    .python .ticTacToeVideo { width: 80%; margin: -20px 0 0 0; }
+    .python .sudokuVideo { width: 80%; margin: 40px 0 0 0; }
+
+}
+
+
 
 @keyframes floatSmallUp {
     50% {

@@ -19,6 +19,7 @@ const App = () => {
 
     var sizer = {
         isMobile: screenWidth <= 740,
+        isTablet: screenWidth <= 1100,
         width: screenWidth
     };
 
@@ -63,7 +64,7 @@ const App = () => {
                     {sizer.width < 1150 &&
                         <MobileNavBar setPage={setPage} sizer={sizer} />
                     }
-                    <hr className="divider" id="home" style={{margin: "0px 0px 60px 0px"}} />
+                    <hr className="divider" id="home" style={{margin: '0'}} />
                     <Home page={page} />
                     <hr className="divider" id="about" style={{margin: '0'}} />
                     <About />

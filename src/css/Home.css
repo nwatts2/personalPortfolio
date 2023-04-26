@@ -1,11 +1,8 @@
 .home {
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 0;
+    margin: 180px 0px 0px 0px;
     width: 100%;
-    min-height: 900px;
-    max-height: 1000px;
 }
 
 .homeLeft {
@@ -13,15 +10,12 @@
     align-items:flex-start;
     padding: 0px 0px 0px 60px;
     width: 50%;
-    height: 100%;
 }
 
 .homeRight {
     justify-content: center;
     align-items:center;
-    position: relative;
     width: 50%;
-    height: 100%;
 }
 
 .homeLeft h1 {
@@ -139,23 +133,25 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .home { max-height: none }
+    .home { margin: 50px 0 0 0 }
     .home h1 { font-size: 1.5rem; }
     .purposeStatement { width: 95%; }
     .purposeStatement p { font-size: 1rem; line-height: 1.3rem; }
 }
 
-@media screen and (max-width: 740px) {
-    .home { flex-flow: column nowrap; margin: 100px 0px 0px 0px}
-    .homeLeft, .homeRight { height: 50%; width:100%; padding: 0; justify-content: center; align-items: center; }
-    .homeLeft h1 { font-size: 1.3rem; line-height: 1.8rem; margin: 30px 0px 0px 0px; text-align: center;}
+@media screen and (max-width: 1100px) {
+    .home { margin: 150px 0px 100px 0px}
+    .homeLeft, .homeRight { width:100%; padding: 0; }
+    .homeLeft h1 { font-size: 1.3rem; line-height: 1.8rem; margin: 30px 0px 0px 0px;}
     .homeLeft .purposeStatement { margin: 30px 0px 0px 0px; }
-    .homeRight { margin: 50px 0px }
     .deskImageContainer { width: 100%; }
 }
 
-@media screen and (max-height: 800px) {
-    .home { min-height: 100vh }
+@media screen and (max-width: 740px) {
+    .home { flex-flow: column-reverse nowrap; margin: 130px 0 50px 0; }
+    .homeLeft, .homeRight { width: 90%; justify-content: center; align-items: center; }
+    .homeLeft { z-index: 1; margin: 20px 0 0 0 }
+    .scrollPrompt { background: linear-gradient(to bottom, transparent, #141719B0 50%); }
 }
 
 @keyframes hover {

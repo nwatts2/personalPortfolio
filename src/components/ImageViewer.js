@@ -40,7 +40,7 @@ const ImageViewer = ({ setShowImage }) => {
                             return <img src={image} className={index === activeImage ? "image activeImage" : 'image inactiveImage'} onClick={() => { setShowImage(images[activeImage]) }} alt="Example of the Noah's Election Machine website"/>
                         })}
                     </div>
-                    <svg className="magnifier" viewBox="0 0 24 24"><g><path id="Vector" d="M7 10H10M10 10H13M10 10V7M10 10V13M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+                    <svg className="magnifier" viewBox="0 0 24 24"><g><path id="Vector" d="M7 10H10M10 10H13M10 10V7M10 10V13M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></g></svg>
                 </div>
                 <div className="nextImageButton" onClick={() => {updateImage("next")}} >
                     <svg viewBox="0 0 64 64" ><path d="M28.5,60.5a6,6,0,0,1-5.73-7.78l2.94-9.45a2,2,0,0,1,3.82,1.19l-2.94,9.45a2,2,0,0,0,3.82,1.18l7-22.5a2,2,0,0,0,0-1.18l-7-22.5a2,2,0,0,0-3.82,1.18l6.63,21.32a2,2,0,0,1,0,1.18l-.88,2.85a2,2,0,0,1-3.82-1.19l.7-2.25L22.77,11.28A6,6,0,0,1,34.23,7.72l7,22.5a6,6,0,0,1,0,3.56l-7,22.5A6,6,0,0,1,28.5,60.5Z"/></svg>

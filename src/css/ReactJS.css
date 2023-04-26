@@ -11,8 +11,6 @@
 }
 
 .reactLeft, .reactRight {
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -31,14 +29,14 @@
     filter: drop-shadow(-5px 5px 3px #141719);
 }
 
-@media screen and (max-width: 1400px) {
-    .reactJSContainer { max-height: none }
-    .electionBanner { top: -30%;  }
+@media screen and (max-width: 1100px) {
+    .react { flex-flow: column-reverse nowrap; }
+    .reactLeft, .reactRight { width: 100%; }
+    .reactRight { margin: 50px 0px 0px 0px; position: relative; }
+    .electionBanner { position: absolute; top: -10px; right: 30px; width: 40%; }
 }
 
 @media screen and (max-width: 740px) {
-    .react { flex-flow: column-reverse nowrap; }
-    .reactLeft, .reactRight { width: 100%; height: 50%; }
-    .reactRight { margin: 100px 0px 0px 0px; }
-    .electionBanner { top: -18%; left: 20%; transform: rotate(-5deg) }
+    .electionBanner { position: relative; top: auto; right: auto; width: 80%; }
+    .reactRight { margin: 180px 0 0 0 }
 }

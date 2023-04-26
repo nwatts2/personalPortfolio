@@ -3,8 +3,8 @@
     z-index: 9;
     width: 100%;
     height: 60px;
-    top: 5px;
-    left: 0px;
+    top: 0;
+    left: 5px;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #232831FF 50%, #23283100 90%);
@@ -21,6 +21,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 10;
+    animation: enterDown .8s ease-in-out;
   }
   
   .navBarContainer h1 {
@@ -222,4 +223,10 @@
       opacity: 0;
       max-height: 1px;
     }
+  }
+
+  @keyframes enterDown {
+    0% { transform: translate(-50%, -70px); opacity: 0; }
+    50% { transform: translate(-50%, -70px); opacity: 0; }
+    100% { transform: translate(-50%, 0); opacity: 1; }
   }

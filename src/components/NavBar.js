@@ -13,6 +13,10 @@ const NavBar = ({ page, setPage, sizer }) => {
     const [topLength, setTopLength] = useState('');
     const [returnLength, setReturnLength] = useState('');
 
+    const [navAnimation, setNavAnimation] = useState({opacity: 0})
+
+    
+
     useEffect(() => {
         switch(page) {
             case "HOME":

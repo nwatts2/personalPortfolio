@@ -133,7 +133,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .home { margin: 50px 0 0 0 }
+    .home { margin: 150px 0 70px 0 }
     .home h1 { font-size: 1.5rem; }
     .purposeStatement { width: 95%; }
     .purposeStatement p { font-size: 1rem; line-height: 1.3rem; }

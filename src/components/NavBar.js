@@ -56,7 +56,7 @@ const NavBar = ({ page, setPage, sizer }) => {
             
         } else {
             tempReturn = sizer.width - (2 * curveLength);
-            tempSpace = sizer.width - titleLength - ((6 - pageIndex) * (2 * curveLength + tabLength)) - (4 * curveLength) - 20;
+            tempSpace = sizer.width - titleLength - ((6 - pageIndex) * (2 * curveLength + tabLength)) - (5 * curveLength) - 20;
         }
 
         tempEnd = (2 * sizer.width) - titleLength - tempSpace - tabLength - (7 * curveLength);

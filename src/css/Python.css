@@ -215,8 +215,8 @@
 }
 
 @keyframes bottomArrowRotate {
-    0% { transform: translate(0, 0) scaleX(-1) rotate(15deg) }
-    50% { transform: translate(-2.5%, -1%) scaleX(-1) rotate(20deg); }
-    100% { transform: translate(0, 0) scaleX(-1) rotate(15deg) }
+    0% { transform: translate(0, 0) scaleX(-1) rotate(13deg) }
+    50% { transform: translate(-3.5%, -1%) scaleX(-1) rotate(18deg); }
+    100% { transform: translate(0, 0) scaleX(-1) rotate(13deg) }
 
 }

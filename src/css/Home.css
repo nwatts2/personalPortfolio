@@ -1,8 +1,12 @@
 .home {
     justify-content: center;
     align-items: center;
-    margin: 180px 0px 50px 0px;
+    margin: 180px 0px 70px 0px;
     width: 100%;
+}
+
+.home svg {
+    filter: drop-shadow(-5px 5px 3px #091112);
 }
 
 .homeLeft {
@@ -28,7 +32,7 @@
 }
 
 .homeLeft .purposeEmphasis {
-    background-color: #3EEAA8;
+    background-color: #33EAC9;
     border-radius: 10px 20px 10px 20px;
     margin: 0;
     padding: 0px 10px;
@@ -40,7 +44,8 @@
 }
 
 .greetingContainer {
-    background-color: #30475D;
+    background-color: transparent;
+    border: 3px solid #33EAC9;
     border-radius: 10px;
     margin: 0;
     padding: 10px 30px;
@@ -52,14 +57,12 @@
     padding: 0;
     margin: 0;
     font-family: "Courier";
-    text-shadow: 0px 0px 3px #232831;
 }
 
 .purposeStatement {
     margin: 40px 0px 0px 0px;
     padding: 20px 30px;
-    border: 5px solid #33EAC9;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 80%;
     box-shadow: -5px 5px 5px #141719;
     background: linear-gradient(to bottom left, #30475D99, transparent);
@@ -76,37 +79,6 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-}
-
-.deskImageContainer .paintBackground {
-    width: 95%;
-    position: absolute;
-    top: 10%;
-    left: 2.5%;
-    z-index: 0;
-}
-
-.deskImageContainer .paintBackground svg {
-    position: absolute;
-}
-
-.deskImageContainer .paintOne { 
-    fill: #d9d9d9;
-    z-index: 1;
-    width: 100%;
-    transform: translate(15%, -20%)
-}
-
-.deskImageContainer .paintTwo { 
-    fill: #141719; 
-    z-index: 0;
-    transform: translate(0%, -20%)
-}
-
-.deskImageContainer .paintThree { 
-    fill: #30475D; 
-    z-index: 2;
-    transform: translate(-5%, -5%)
 }
 
 .deskImageContainer img {
@@ -126,10 +98,45 @@
     transition: opacity .2s ease-in-out;
 }
 
+.scrollPrompt p {
+    font-size: 1.4rem;
+}
+
 .scrollPrompt svg {
-    height: 35px;
+    height: 45px;
     stroke: #33EAC9;
     animation: hover 3s ease-in-out infinite;
+    filter: none;
+}
+
+.deskImageContainer .rectangle1 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: -2%;
+    left: 5%;
+    fill: #3EEAA8;
+    animation: float1 4s ease-in-out infinite;
+}
+
+.deskImageContainer .rectangle2 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    fill: #33EAC9;
+    animation: float2 4s -1s ease-in-out infinite;
+}
+
+.deskImageContainer .rectangle3 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    fill: #141719;
+    animation: float3 4s -3s ease-in-out infinite;
 }
 
 @media screen and (max-width: 1400px) {
@@ -158,4 +165,22 @@
     0% { transform: translateY(-15%) }
     50% { transform: translateY(5%) }
     100% { transform: translateY(-15%) }
+}
+
+@keyframes float1 {
+    0% {transform: translate(-0.5%, -1.5%)}
+    50% {transform: translate(0.5%, 1.5%)}
+    100% {transform: translate(-0.5%, -1.5%)}
+}
+
+@keyframes float2 {
+    0% {transform: translate(-1.5%, -1%)}
+    50% {transform: translate(1.5%, 1%)}
+    100% {transform: translate(-1.5%, -1%)}
+}
+
+@keyframes float3 {
+    0% {transform: translate(-0.5%, -2%)}
+    50% {transform: translate(1%, 2%)}
+    100% {transform: translate(-0.5%, -2%)}
 }

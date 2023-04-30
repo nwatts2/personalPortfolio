@@ -67,7 +67,7 @@ const App = () => {
                     <hr className="divider" id="home" style={{margin: '0'}} />
                     <Home page={page} />
                     <hr className="divider" id="about" style={{margin: '0'}} />
-                    <About />
+                    <About setPage={setPage} />
                     <hr className="divider" id="swift" />
                     <Swift sizer={sizer} />
                     <hr className="divider" id="react" />

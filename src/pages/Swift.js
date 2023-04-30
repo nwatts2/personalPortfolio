@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import ProjectPanel from '../components/ProjectPanel';
-import PaintBackground from '../components/PaintBackground';
 import IOS from '../components/IOS';
 import ColorPicker from '../components/ColorPicker';
 import CoverLetterGenerator from '../components/CoverLetterGenerator';
@@ -16,6 +15,12 @@ const Swift = ({ sizer }) => {
             {!sizer.isTablet &&
                 <div className="row swift">
                         <ProjectPanel mode={"SWIFT"} numProjects={3} sizer={sizer} />
+                        <div className='swiftBackground'>
+                            <svg className="hex1" viewBox="0 0 184.751 184.751"><path d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z"/></svg>
+                            <svg className="hex4" viewBox="0 0 184.751 184.751"><path d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z"/></svg>
+                            <svg className="hex2" viewBox="0 0 184.751 184.751"><path d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z"/></svg>
+                            <svg className="hex3" viewBox="0 0 184.751 184.751"><path d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z"/></svg>    
+                        </div>
                 </div>
             }
             {sizer.isTablet &&
@@ -25,7 +30,6 @@ const Swift = ({ sizer }) => {
                     <IOS sizer={sizer} />
                 </div>
             }
-            <PaintBackground />
         </div>
                 
     );

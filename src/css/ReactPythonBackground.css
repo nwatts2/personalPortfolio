@@ -7,43 +7,42 @@
     z-index: -1;
 }
 
-.reactPythonBackground .paintBackground {
-    width: 90%;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    bottom: 15%;
-    right: -5%;
-    z-index: 0;
-}
-
-.reactPythonBackground .paintBackground svg {
-    position: absolute;
-    filter: none;
-    overflow: hidden;
-}
-
-.reactPythonBackground .paintOne { 
-    fill: #141719;
-    z-index: 2;
-    width: 85%;
-    transform: translate(-10%, -5%) rotate(90deg) scaleX(0.67);
-}
-
-.reactPythonBackground .paintTwo { 
-    fill: #30475D; 
-    z-index: 0;
-    width: 65%;
-    transform: translate(15%, -10%) rotate(-90deg) scaleX(0.67);
-}
-
-.reactPythonBackground .paintThree { 
-    fill: #d9d9d9;
-    z-index: 1;
-    width: 65%;
-    transform: translate(-10%, -2%) rotate(20deg) scaleX(0.67);
-}
-
 .reactPythonBackground svg {
-    filter: drop-shadow(-5px 5px 3px #141719)
+    filter: drop-shadow(-5px 5px 3px #141719);
+    position: absolute;
+}
+
+.reactPythonBackground .reactStar1 { width: 25%; transform: rotate(-10deg); top: 2%; left: 2%; fill: white; animation: spinFloat 7s -3.5s ease-in-out infinite; }
+.reactPythonBackground .reactStar2 { width: 30%; transform: rotate(-10deg); top: 10%; right: 15%; fill: #141719; animation: spinFloat 7s -2s ease-in-out infinite; }
+.reactPythonBackground .reactStar3 { width: 25%; transform: rotate(-10deg); top: 18%; left: 30%; fill: #33EAC9; animation: spinFloat 7s ease-in-out infinite; }
+
+.reactPythonBackground .pythonCircle1 { top: 39%; left: 38%; fill: #30475D; animation: diagonalFloat 3.5s ease-in-out infinite }
+.reactPythonBackground .pythonCircle2 { top: 45%; left: 5%; fill: #232831; animation: horizontalFloat 3s -1.5s ease-in-out infinite }
+.reactPythonBackground .pythonCircle3 { bottom: 20%; right: 2%; fill: white; animation: verticalFloat 4s -2s ease-in-out infinite }
+.reactPythonBackground .pythonCircle4 { bottom: 5%; left: 1%; fill: #33EAC9; animation: diagonalFloat 3.5s -1s ease-in-out infinite }
+.reactPythonBackground .pythonCircle5 { bottom: 2%; right: 27%; fill: #232831; animation: horizontalFloat 3s -0.5s ease-in-out infinite }
+
+@keyframes diagonalFloat {
+    0% { transform: translate(2%, 2%) }
+    50% { transform: translate(-2%, -2%) }
+    100% { transform: translate(2%, 2%) }
+}
+
+@keyframes horizontalFloat {
+    0% { transform: translate(2.5%, -1%) }
+    50% { transform: translate(-1%, 0%) }
+    100% { transform: translate(2.5%, -1%) }
+}
+
+@keyframes verticalFloat {
+    0% { transform: translate(0.5%, -3%) }
+    50% { transform: translate(0%, 1%) }
+    100% { transform: translate(0.5%, -3%) }
+}
+
+@keyframes spinFloat {
+    0% {transform: translate(0%, 0%) rotate(-10deg)}
+    50% {transform: translate(2%, 2%) rotate(-10deg)}
+    100% {transform: translate(0%, 0%) rotate(-10deg)}
+
 }

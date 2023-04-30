@@ -1,6 +1,5 @@
 import React from 'react';
 import Desk from '../images/Desk.png';
-import PaintBackground from '../components/PaintBackground';
 import "../css/Home.css";
 
 const Home = ({ page }) => {
@@ -22,7 +21,15 @@ const Home = ({ page }) => {
             </div>
             <div className="column homeRight">
                 <div className="row deskImageContainer">
-                    <PaintBackground />
+                    <svg className="rectangle1" viewBox="0 0 100 100" >
+                        <rect width="100" height="100" />
+                    </svg>
+                    <svg className="rectangle2" viewBox="0 0 100 100" >
+                        <rect width="100" height="100" />
+                    </svg>
+                    <svg className="rectangle3" viewBox="0 0 100 100" >
+                        <rect width="100" height="100" />
+                    </svg>
                     <img src={Desk} alt="Noah's Desk" />
                 </div>
             </div>

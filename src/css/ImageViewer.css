@@ -30,7 +30,7 @@
 }
 
 .imageViewerDisplayContainer .prevImageButton:active svg, .imageViewerDisplayContainer .nextImageButton:active svg, .imageViewerDisplayContainer .prevImageButton:hover svg, .imageViewerDisplayContainer .nextImageButton:hover svg {
-    fill: #d9d9d9;
+    fill: white;
 }
 
 .imageViewerDisplay {

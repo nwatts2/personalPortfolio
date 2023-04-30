@@ -7,7 +7,7 @@
 }
 
 .projectPanelDisplayContainer {
-    border: 5px solid #d9d9d9;
+    border: 5px solid white;
     width: 100%;
     padding: 0px;
     overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .projectPanelDisplayContainer .prevPanelButton:active svg, .projectPanelDisplayContainer .nextPanelButton:active svg {
-    fill: #d9d9d9;
+    fill: white;
 }
 
 .projectPanelDisplayContainer .prevPanelButton, .projectPanelDisplayContainer .nextPanelButton {
@@ -41,11 +41,11 @@
 }
 
 .projectPanelDisplayContainer .prevPanelButton:hover svg {
-    fill: #d9d9d9;
+    fill: white;
 }
 
 .projectPanelDisplayContainer .nextPanelButton:hover svg {
-    fill: #d9d9d9;
+    fill: white;
 }
 
 .projectPanelDisplay {

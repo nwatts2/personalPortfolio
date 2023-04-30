@@ -1,5 +1,6 @@
 .macOS {
     width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: flex-start;
 }
@@ -13,6 +14,7 @@
 
 .macOSRight {
     width: 50%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +40,7 @@
     max-height: 100%;
     max-width: 100%;
     border-radius: 20px;
-    margin: 50px 0px;
+    margin: 20px 0;
     box-shadow: -5px 5px 3px 0px #141719;
     z-index: 1;
 }

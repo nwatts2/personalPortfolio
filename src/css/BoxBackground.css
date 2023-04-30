@@ -36,6 +36,10 @@
 .boxBackground .cube23 { bottom: -11.25%; left: 82.75%; animation-delay: -6s }
 .boxBackground .cube24 { bottom: -11.25%; left: 97%; animation-delay: -7s }
 
+@media screen and (max-width: 740px) {
+    .boxBackground { visibility: hidden; }
+}
+
 @keyframes boxFloat {
     0% { transform: translateY(-1%) }
     50% { transform: translateY(1%) }

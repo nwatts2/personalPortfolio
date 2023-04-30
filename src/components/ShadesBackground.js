@@ -3,7 +3,7 @@ import React from 'react';
 const ShadesBackground = () => {
     return (
         <div className="shadesBackground">
-            <svg viewBox="0 0.5 20 13" >
+            <svg viewBox="0 0.5 20 13" preserveAspectRatio="none" >
                 <path fill-rule="evenodd" style={{animation: "floatUpDown 2.5s -.5s ease-in-out infinite"}} d="M19 2a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1z" />
                 <path fill-rule="evenodd" style={{animation: "floatUpDown 2.5s -.4s ease-in-out infinite"}} d="M19 5a0.75 0.75 0 01-0.75 0.75H1.75a0.75 0.75 0 010-1.5h16.5a0.75 0.75 0 010.75 0.75z" />
                 <path fill-rule="evenodd" style={{animation: "floatUpDown 2.5s -.3s ease-in-out infinite"}} d="M19 7.5a0.5 0.5 0 01-0.5 0.5H1.5a0.5 0.5 0 010-1h17a0.5 0.5 0 010.5 0.5z" />

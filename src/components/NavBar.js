@@ -13,10 +13,6 @@ const NavBar = ({ page, setPage, sizer }) => {
     const [topLength, setTopLength] = useState('');
     const [returnLength, setReturnLength] = useState('');
 
-    const [navAnimation, setNavAnimation] = useState({opacity: 0})
-
-    
-
     useEffect(() => {
         switch(page) {
             case "HOME":
@@ -73,17 +69,27 @@ const NavBar = ({ page, setPage, sizer }) => {
         return pixels / sizer.width * 100;
     }
 
+    function handleScroll (newPage) {
+        let e = document.getElementById(newPage.toLowerCase());
+        e.scrollIntoView({
+            block:'start',
+            behavior: 'smooth',
+            inline: 'nearest'
+        });
+        setPage(newPage);
+    }
+
     return (
         <div className="row navBarContainer">
             <h1>Noah's Lab</h1>
             <h2>By Noah Watts</h2>
             <div className='row navBar' >
-                <h3 onClick={() => {setPage("HOME")}} style={{top: 0, left: `0px`}} ><a href="#home">Home</a></h3>
-                <h3 onClick={() => {setPage("ABOUT")}} style={{top: 0, left: `125px`}} ><a href="#about">About</a></h3>
-                <h3 onClick={() => {setPage("SWIFT")}} style={{top: 0, left: `250px`}} ><a href="#swift">Swift</a></h3>
-                <h3 onClick={() => {setPage("REACT")}} style={{top: 0, left: `375px`}} ><a href="#react">React.js</a></h3>
-                <h3 onClick={() => {setPage("PYTHON")}} style={{top: 0, left: `500px`}} ><a href="#python">Python</a></h3>
-                <h3 onClick={() => {setPage("CONTACT")}} style={{top: 0, left: `625px`}} ><a href="#contact">Contact</a></h3>
+                <h3 onClick={() => {handleScroll("HOME")}} style={{top: 0, left: `0px`}} >Home</h3>
+                <h3 onClick={() => {handleScroll("ABOUT")}} style={{top: 0, left: `125px`}} >About</h3>
+                <h3 onClick={() => {handleScroll("SWIFT")}} style={{top: 0, left: `250px`}} >Swift</h3>
+                <h3 onClick={() => {handleScroll("REACT")}} style={{top: 0, left: `375px`}} >React.js</h3>
+                <h3 onClick={() => {handleScroll("PYTHON")}} style={{top: 0, left: `500px`}} >Python</h3>
+                <h3 onClick={() => {handleScroll("CONTACT")}} style={{top: 0, left: `625px`}} >Contact</h3>
             </div>
             <div className="navSVG">
                 <svg width={sizer.width} height="100%" viewBox="0 0 100 100" overflow="visible" preserveAspectRatio="none" style={{strokeLinejoin: "round", stroke: '#33EAC9', fill: '#232831'}}>

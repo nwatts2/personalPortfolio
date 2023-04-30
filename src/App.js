@@ -10,7 +10,6 @@ import Contact from './pages/Contact'
 import BackgroundGraphic from './components/BackgroundGraphic'
 import Social from './components/Social';
 import ReactPythonBackground from './components/ReactPythonBackground';
-import BoxBackground from './components/BoxBackground';
 import ImageModal from './components/ImageModal';
 
 const App = () => {
@@ -67,20 +66,19 @@ const App = () => {
                     }
                     <hr className="divider" id="home" style={{margin: '0'}} />
                     <Home page={page} />
-                    <hr className="divider" id="about" style={{margin: '0'}} />
+                    <hr className="divider" id="about" />
                     <About setPage={setPage} />
                     <hr className="divider" id="swift" />
                     <Swift sizer={sizer} />
                     <hr className="divider" id="react" />
-                    <div className='reactPythonContent'>
-                        <div className='reactPythonWrapper'>
+                    <div className='row reactPythonContent'>
+                        <div className='column reactPythonWrapper'>
                             <ReactJS setShowImage={setShowImage} />
                             <hr className="divider" id="python" />
                             <Python />
                             <hr className="divider" id="contact" />
                             <Contact />
                         </div>
-                        <BoxBackground />
                         <ReactPythonBackground />
                     </div>
                     <Social sizer={sizer} />

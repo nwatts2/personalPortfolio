@@ -5,7 +5,16 @@ import ShadesBackground from '../components/ShadesBackground';
 import "../css/About.css";
 
 const About = ({ setPage }) => {
-    //"M7 33.5h-5v-5c0-0.552-0.448-1-1-1s-1 0.448-1 1v6c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1s-0.448-1-1-1zM31 3.5h-6c-0.552 0-1 0.448-1 1s0.448 1 1 1h5v5c0 0.552 0.448 1 1 1s1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"
+
+    function handleScroll () {
+        let e = document.getElementById('CONTACT');
+        e.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+            inline: 'nearest'
+        });
+        setPage('CONTACT');
+    }
 
     return (
         <div className="column aboutContainer pageSection">
@@ -16,7 +25,7 @@ const About = ({ setPage }) => {
                     <div className='row profileImageContainer'>
                         <svg viewBox="0 3 32 33"><path d="M7 3.5h-6c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1s1-0.448 1-1v-5h5c0.552 0 1-0.448 1-1s-0.448-1-1-1zM31 27.5c-0.552 0-1 0.448-1 1v5h-5c-0.552 0-1 0.448-1 1s0.448 1 1 1h6c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path></svg>
                         <img src={NoahPhoto} alt="Noah Watts" />
-                        <h3 className='contactButton' onClick={() => {setPage("CONTACT")}} ><a href="#contact" >Contact me</a></h3>
+                        <h3 className='contactButton' onClick={() => {handleScroll()}} >Contact me</h3>
                     </div>
                     <span style={{margin: "0 0 0 10%"}} >{'<h1> Noah Watts </h1>'}</span>
                     <span style={{margin: "0 0 0 10%"}} >{'<h2> Denver, Colorado </h2>'}</span>

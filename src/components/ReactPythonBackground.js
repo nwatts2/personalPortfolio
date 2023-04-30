@@ -1,4 +1,5 @@
 import React from 'react';
+import BoxBackground from '../components/BoxBackground';
 import '../css/ReactPythonBackground.css';
 
 const ReactPythonBackground = () => {
@@ -38,6 +39,7 @@ const ReactPythonBackground = () => {
             <svg width="500" height="500" className="pythonCircle5" viewBox="0 0 500 500" >
                 <circle cx="250" cy="250" r="250" />
             </svg>
+            <BoxBackground />
         </div>
     )
 }

@@ -9,23 +9,32 @@
 
 .boxBackground svg { position: absolute; width: 16%; fill: none; animation: boxFloat 4s ease-in-out infinite }
 
-.boxBackground .cube1 { bottom: -3%; left: -10%; }
-.boxBackground .cube2 { bottom: -3%; left: 4.25%; animation-delay: -1s }
-.boxBackground .cube3 { bottom: -3%; left: 18.5%; animation-delay: -2s }
-.boxBackground .cube4 { bottom: -3%; left: 32.75%; animation-delay: -3s }
-.boxBackground .cube5 { bottom: -3%; left: 47%; animation-delay: -4s }
-.boxBackground .cube6 { bottom: -3%; left: 61.25%; animation-delay: -5s }
-.boxBackground .cube7 { bottom: -3%; left: 75.5%; animation-delay: -6s }
-.boxBackground .cube8 { bottom: -3%; left: 89.75%; animation-delay: -7s }
+.boxBackground .cube1 { bottom: -3%; left: -10%; animation-delay: -.33s }
+.boxBackground .cube2 { bottom: -3%; left: 4.25%; animation-delay: -1.33s }
+.boxBackground .cube3 { bottom: -3%; left: 18.5%; animation-delay: -2.33s }
+.boxBackground .cube4 { bottom: -3%; left: 32.75%; animation-delay: -3.33s }
+.boxBackground .cube5 { bottom: -3%; left: 47%; animation-delay: -4.33s }
+.boxBackground .cube6 { bottom: -3%; left: 61.25%; animation-delay: -5.33s }
+.boxBackground .cube7 { bottom: -3%; left: 75.5%; animation-delay: -6.33s }
+.boxBackground .cube8 { bottom: -3%; left: 89.75%; animation-delay: -7.33s }
 
-.boxBackground .cube9 { bottom: 5.25%; left: -2.75%; animation-delay: -0.5s }
-.boxBackground .cube10 { bottom: 5.25%; left: 11.5%; animation-delay: -1.5s }
-.boxBackground .cube11 { bottom: 5.25%; left: 25.75%; animation-delay: -2.5s }
-.boxBackground .cube12 { bottom: 5.25%; left: 40%; animation-delay: -3.5s }
-.boxBackground .cube13 { bottom: 5.25%; left: 54.25%; animation-delay: -4.5s }
-.boxBackground .cube14 { bottom: 5.25%; left: 68.5%; animation-delay: -5.5s }
-.boxBackground .cube15 { bottom: 5.25%; left: 82.75%; animation-delay: -6.5s }
-.boxBackground .cube16 { bottom: 5.25%; left: 97%; animation-delay: -7.5s }
+.boxBackground .cube9 { bottom: 5.25%; left: -2.75%; animation-delay: -0.67s }
+.boxBackground .cube10 { bottom: 5.25%; left: 11.5%; animation-delay: -1.67s }
+.boxBackground .cube11 { bottom: 5.25%; left: 25.75%; animation-delay: -2.67s }
+.boxBackground .cube12 { bottom: 5.25%; left: 40%; animation-delay: -3.67s }
+.boxBackground .cube13 { bottom: 5.25%; left: 54.25%; animation-delay: -4.67s }
+.boxBackground .cube14 { bottom: 5.25%; left: 68.5%; animation-delay: -5.67s }
+.boxBackground .cube15 { bottom: 5.25%; left: 82.75%; animation-delay: -6.67s }
+.boxBackground .cube16 { bottom: 5.25%; left: 97%; animation-delay: -7.67s }
+
+.boxBackground .cube17 { bottom: -11.25%; left: -2.75%; }
+.boxBackground .cube18 { bottom: -11.25%; left: 11.5%; animation-delay: -1s }
+.boxBackground .cube19 { bottom: -11.25%; left: 25.75%; animation-delay: -2s }
+.boxBackground .cube20 { bottom: -11.25%; left: 40%; animation-delay: -3s }
+.boxBackground .cube21 { bottom: -11.25%; left: 54.25%; animation-delay: -4s }
+.boxBackground .cube22 { bottom: -11.25%; left: 68.5%; animation-delay: -5s }
+.boxBackground .cube23 { bottom: -11.25%; left: 82.75%; animation-delay: -6s }
+.boxBackground .cube24 { bottom: -11.25%; left: 97%; animation-delay: -7s }
 
 @keyframes boxFloat {
     0% { transform: translateY(-1%) }

@@ -1,6 +1,5 @@
 import React from 'react';
 import SectionHeader from '../components/SectionHeader';
-import ScaleBackground from '../components/ScaleBackground';
 import "../css/Contact.css";
 
 const Contact = () => {
@@ -8,8 +7,6 @@ const Contact = () => {
         <div className="column contactContainer pageSection" style={{margin: "0px 0px 30px 0px"}}>
             <SectionHeader title="Contact" identifier="CONTACT" />
             <div className="column contact">
-            <div className="column contactBackground">
-                <ScaleBackground />
                 <div className="column contactBox">
                     <div className="column contactBoxBlock box1" onClick={() => {window.open("https://www.linkedin.com/in/noahwatts/", '_blank', 'noreferrer')}}>
                         <div className="row contactBoxEntry">
@@ -77,7 +74,6 @@ const Contact = () => {
                         <p>{"buymeacoffee.com/noahwatts"}</p>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
                 

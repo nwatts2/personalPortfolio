@@ -51,6 +51,12 @@ const ImageViewer = ({ setShowImage }) => {
                     return <div className={index === activeImage ? 'row imageContainer selected' : 'row imageContainer unselected'} onClick={() => {setActiveImage(index)}}><img src={image} alt="Preview of Noah's Election Machine website" /></div>
                 })}
             </div>
+            <a href="https://noahselectionmachine.com/" target="_blank" rel="noreferrer" >
+                <div className="row visitPage">
+                    <h4>Vist the site</h4>
+                    <svg viewBox="0 0 20 20" ><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-838.000000, -29.000000)" fill="white"><path d="M855,46 L841,46 L841,32 L848,32 L848,30 L841,30 C839.89,30 839,30.9 839,32 L839,46 C839,47.1 839.89,48 841,48 L855,48 C856.1,48 857,47.1 857,46 L857,39 L855,39 L855,46 L855,46 Z M850,30 L850,32 L853.59,32 L843.76,41.83 L845.17,43.24 L855,33.41 L855,37 L857,37 L857,30 L850,30 L850,30 Z" ></path></g></g></svg>
+                </div>
+            </a>
         </div>
     )
 }

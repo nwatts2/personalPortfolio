@@ -32,7 +32,7 @@ const App = () => {
                     setPage(entry.target.id);
                 }
             });
-        });
+        }, { rootMargin: `${-1 * window.innerHeight / 5}px` });
 
         const tabList = document.querySelectorAll(".tab");
         tabList.forEach((element) => {

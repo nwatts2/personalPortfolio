@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import SenateCallSim from '../images/CallSim.png';
-import GubernatorialResults2018 from '../images/2018GovResults.png';
-import GubernatorialResults2022 from '../images/2022GovResults.png';
-import HouseResults from '../images/HouseResults.png';
-import MainPage from '../images/MainPage.png';
-import AlaskaResults from '../images/2022SenateResults.png';
+import SenateCallSim from '../images/CallSim.webp';
+import GubernatorialResults2018 from '../images/2018GovResults.webp';
+import GubernatorialResults2022 from '../images/2022GovResults.webp';
+import HouseResults from '../images/HouseResults.webp';
+import MainPage from '../images/MainPage.webp';
+import AlaskaResults from '../images/2022SenateResults.webp';
 import '../css/ImageViewer.css';
 
 const ImageViewer = ({ setShowImage }) => {
@@ -37,7 +37,7 @@ const ImageViewer = ({ setShowImage }) => {
                 <div className="row imageViewerDisplay">
                     <div className="images">
                         {images.map((image, index) => {
-                            return <img src={image} className={index === activeImage ? "image activeImage" : 'image inactiveImage'} onClick={() => { setShowImage(images[activeImage]) }} alt="Example of the Noah's Election Machine website"/>
+                            return <img key={`imageViewer-${index}-main`} src={image} className={index === activeImage ? "image activeImage" : 'image inactiveImage'} onClick={() => { setShowImage(images[activeImage]) }} alt="Example of the Noah's Election Machine website"/>
                         })}
                     </div>
                     <svg className="magnifier" viewBox="0 0 24 24"><g><path id="Vector" d="M7 10H10M10 10H13M10 10V7M10 10V13M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></g></svg>
@@ -48,13 +48,13 @@ const ImageViewer = ({ setShowImage }) => {
             </div>
             <div className="row imageSelector">
                 {images.map((image, index) => {
-                    return <div className={index === activeImage ? 'row imageContainer selected' : 'row imageContainer unselected'} onClick={() => {setActiveImage(index)}}><img src={image} alt="Preview of Noah's Election Machine website" /></div>
+                    return <div key={`imageViewer-${index}`} className={index === activeImage ? 'row imageContainer selected' : 'row imageContainer unselected'} onClick={() => {setActiveImage(index)}}><img key={`imageViewer-${index}-img`} src={image} alt="Preview of Noah's Election Machine website" /></div>
                 })}
             </div>
             <a href="https://noahselectionmachine.com/" target="_blank" rel="noreferrer" >
                 <div className="row visitPage">
                     <h4>Vist the site</h4>
-                    <svg viewBox="0 0 20 20" ><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-838.000000, -29.000000)" fill="white"><path d="M855,46 L841,46 L841,32 L848,32 L848,30 L841,30 C839.89,30 839,30.9 839,32 L839,46 C839,47.1 839.89,48 841,48 L855,48 C856.1,48 857,47.1 857,46 L857,39 L855,39 L855,46 L855,46 Z M850,30 L850,32 L853.59,32 L843.76,41.83 L845.17,43.24 L855,33.41 L855,37 L857,37 L857,30 L850,30 L850,30 Z" ></path></g></g></svg>
+                    <svg viewBox="0 0 20 20" ><g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"><g transform="translate(-838.000000, -29.000000)" fill="white"><path d="M855,46 L841,46 L841,32 L848,32 L848,30 L841,30 C839.89,30 839,30.9 839,32 L839,46 C839,47.1 839.89,48 841,48 L855,48 C856.1,48 857,47.1 857,46 L857,39 L855,39 L855,46 L855,46 Z M850,30 L850,32 L853.59,32 L843.76,41.83 L845.17,43.24 L855,33.41 L855,37 L857,37 L857,30 L850,30 L850,30 Z" ></path></g></g></svg>
                 </div>
             </a>
         </div>

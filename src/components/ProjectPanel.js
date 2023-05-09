@@ -74,7 +74,7 @@ const ProjectPanel = ({ mode, numProjects, sizer }) => {
             </div>
             <div className="row projectPanelSelector">
                 {panels.map((panelNumber) => {
-                    return <hr className={panelNumber === activePanel ? "selected" : ""} onClick={() => {setActivePanel(panelNumber)}} />
+                    return <hr key={`projectPanelSelector-${panelNumber}`} className={panelNumber === activePanel ? "selected" : ""} onClick={() => {setActivePanel(panelNumber)}} />
                 })}
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeader from '../components/SectionHeader';
-import NoahPhoto from '../images/NoahPhoto.jpg';
+import NoahPhoto from '../images/NoahPhoto.webp';
 import ShadesBackground from '../components/ShadesBackground';
 import "../css/About.css";
 

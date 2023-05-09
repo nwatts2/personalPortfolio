@@ -1,5 +1,5 @@
 import React from 'react';
-import Desk from '../images/Desk.png';
+import Desk from '../images/Desk.webp';
 import "../css/Home.css";
 
 const Home = ({ page }) => {

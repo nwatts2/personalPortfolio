@@ -8,13 +8,13 @@ const ProjectDescription = ({ title, text, link }) => {
             {text.map((thisText, index) => {
                 if (index !== 0) {
                     return (
-                        <div className='column' style={{width: '100%', margin: '0', justifyContent: 'flex-start', alignItems: 'flex-start'}}  >
-                            <span>{"//"}</span>
-                            <p><span>{"<p>"}</span> {thisText} <span>{"</p>"}</span></p>
+                        <div key={`${thisText}-container`} className='column' style={{width: '100%', margin: '0', justifyContent: 'flex-start', alignItems: 'flex-start'}}  >
+                            <span key={`${thisText}-child${index}-1`}>{"//"}</span>
+                            <p key={`${thisText}-child${index}-2`}><span key={`${thisText}-child${index}-3`}>{"<p>"}</span> {thisText} <span key={`${thisText}-child${index}-4`}>{"</p>"}</span></p>
                         </div>
                     )
                 } else {
-                    return <p><span>{"<p>"}</span> {thisText} <span>{"</p>"}</span></p>
+                    return <p key={`${thisText}-child${index}-1`}><span key={`${thisText}-child${index}-2`}>{"<p>"}</span> {thisText} <span key={`${thisText}-child${index}-3`}>{"</p>"}</span></p>
                 }
             })}
             {link &&
